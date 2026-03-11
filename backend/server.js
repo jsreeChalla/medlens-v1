@@ -1,275 +1,204 @@
-// server.js — Drug Research API (Node.js + Ollama + BioMistral)
-// Run: node server.js
-// Requires: npm install express cors axios express-rate-limit dotenv
-
 require("dotenv").config();
-
 const express = require("express");
 const cors = require("cors");
-const axios = require("axios");
 const rateLimit = require("express-rate-limit");
+const Groq = require("groq-sdk");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-const OLLAMA_BASE_URL = process.env.OLLAMA_URL || "http://localhost:11434";
-const MODEL = process.env.MODEL || "biomistral";
+const GROQ_API_KEY = process.env.GROQ_API_KEY || "";
+const GROQ_MODEL = process.env.GROQ_MODEL || "llama-3.1-8b-instant";
 
-// ── Middleware ──────────────────────────────────────────────────────────────
-app.use(cors({ origin: "*" }));
-app.use(express.json());
-
-const limiter = rateLimit({ windowMs: 60_000, max: 30, message: { error: "Too many requests" } });
-app.use("/api/", limiter);
-
-// ── System prompts ──────────────────────────────────────────────────────────
-
-// For doctors / advanced queries
-const SYSTEM_PROMPT = `You are a specialized biomedical research assistant.
-Provide accurate, evidence-based information about drugs, compounds, mechanisms of action,
-pharmacokinetics, drug interactions, clinical trials, and medical literature for %medicine%.
-
-Guidelines:
-- Always cite relevant medical knowledge and studies when possible
-- Clearly distinguish between approved uses and experimental/off-label uses
-- Flag potential drug interactions and contraindications prominently
-- Use standard pharmacological terminology
-- Include relevant molecular/biochemical details when appropriate
-- For any safety-critical information, recommend consulting a licensed healthcare professional
-- Structure responses clearly with sections when the answer is complex
-
-You do NOT provide personal medical advice or prescriptions.`;
-
-// For consumer-friendly structured drug info
-const CONSUMER_SYSTEM_PROMPT = `You are a JSON API. You only output valid JSON, nothing else — no greetings, no explanations, no markdown fences.
-
-The user needs structured information about %medicine%, respond with ONLY this JSON structure filled in completely. 
-Below is sample structure for the response, but you must fill in all fields with real information about the medicine. 
-Do not leave any field empty or with placeholder text.
-Summerize the plainEnglishSummary to a few lines while informating the user the severity of the condition it treats and how it helps.
-Limit the manufacturer list to 5 real Indian brands with realistic prices.
-Do not repeat the same brand with different or same prices.
-Summarize the warnings, usedFor conditions and common side effects in a couple of sentences, do not list every single warning, condition or side effect from the leaflet, just the most important and severe ones that a consumer should be aware of.
-If certain information is not available, use "Not available" or a similar phrase, but do not omit any field.
-
-{
-  "name": "the medicine name",
-  "genericName": "generic or salt name",
-  "plainEnglishSummary": "2-3 sentences explaining what this medicine does in simple words a teenager would understand",
-  "usedFor": ["condition 1", "condition 2", "condition 3"],
-  "howItWorks": "one simple sentence, no medical jargon",
-  "sideEffects": {
-    "common": ["side effect 1", "side effect 2", "side effect 3"],
-    "serious": ["serious side effect 1", "serious side effect 2"]
-  },
-  "interactions": [
-    { "drug": "drug name", "effect": "what happens if combined" },
-    { "drug": "drug name", "effect": "what happens if combined" }
-  ],
-  "warnings": ["warning 1", "warning 2"],
-  "indianManufacturers": [
-    { "brand": "Brand Name", "manufacturer": "Company Name", "pricePerStrip": "₹XX", "strength": "XXmg", "type": "tablet" },
-    { "brand": "Brand Name", "manufacturer": "Company Name", "pricePerStrip": "₹XX", "strength": "XXmg", "type": "tablet" },
-    { "brand": "Brand Name", "manufacturer": "Company Name", "pricePerStrip": "₹XX", "strength": "XXmg", "type": "tablet" }
-  ],
-  "dosageSimple": "simple dosage instructions a patient can follow",
-  "canBuyWithout": true,
-  "disclaimer": "Always consult a doctor before taking any medicine."
+if (!GROQ_API_KEY) {
+  console.error("GROQ_API_KEY missing in .env");
+  process.exit(1);
 }
 
-Rules:
-- Output ONLY the JSON object. First character must be { and last must be }
-- indianManufacturers must have 5-8 real Indian brands with realistic rupee prices
-- Keep language simple enough for a 14-year-old
-- Never add text before or after the JSON`;
+const groq = new Groq({ apiKey: GROQ_API_KEY });
+app.use(cors({ origin: "*" }));
+app.use(express.json());
+app.use("/api/", rateLimit({ windowMs: 60_000, max: 60, message: { error: "Too many requests" } }));
 
+// ── Prompts ───────────────────────────────────────────────────────────────────
 
-// ── Routes ──────────────────────────────────────────────────────────────────
+const CONSUMER_SYSTEM_PROMPT = `You are a medical JSON API. Output ONLY valid JSON.
 
-// Health check + Ollama connectivity
-app.get("/api/health", async (req, res) => {
+VALIDATION: If "%medicine%" is not a real pharmaceutical drug, output only:
+{"error": "Please enter a valid medicine name."}
+Invalid examples: random strings like "khfktuytouy", food names, numbe₹.
+
+For "%medicine%" output:
+{
+  "name": "official name",
+  "genericName": "active ingredient",
+  "brandName": "top Indian brand",
+  "drugClass": "pharmacological class",
+  "category": "therapeutic category",
+  "plainEnglishSummary": "2-3 patient-friendly sentences: condition, severity, how drug helps",
+  "usedFor": ["condition 1","condition 2","condition 3","condition 4","condition 5"],
+  "howItWorks": "1-2 plain sentences on mechanism",
+  "sideEffects": [
+    {"name":"...","severity":"MAJOR","description":"...","frequency":"e.g. Rare <1%"},
+    {"name":"...","severity":"MAJOR","description":"...","frequency":"..."},
+    {"name":"...","severity":"MODERATE","description":"...","frequency":"..."},
+    {"name":"...","severity":"MODERATE","description":"...","frequency":"..."},
+    {"name":"...","severity":"MODERATE","description":"...","frequency":"..."},
+    {"name":"...","severity":"MINOR","description":"...","frequency":"..."},
+    {"name":"...","severity":"MINOR","description":"...","frequency":"..."}
+  ],
+  "interactions": [
+    {"drug":"...","severity":"MAJOR","effect":"..."},
+    {"drug":"...","severity":"MAJOR","effect":"..."},
+    {"drug":"...","severity":"MODERATE","effect":"..."},
+    {"drug":"...","severity":"MODERATE","effect":"..."},
+    {"drug":"...","severity":"MINOR","effect":"..."}
+  ],
+  "warnings": ["...","...","...","...","..."],
+  "indianManufacture₹": [
+    {"brand":"...","manufacturer":"...","pricePe₹trip":"₹ XX","strength":"XXmg","type":"tablet"},
+    {"brand":"...","manufacturer":"...","pricePe₹trip":"₹ XX","strength":"XXmg","type":"tablet"},
+    {"brand":"...","manufacturer":"...","pricePe₹trip":"₹ XX","strength":"XXmg","type":"tablet"},
+    {"brand":"...","manufacturer":"...","pricePe₹trip":"₹ XX","strength":"XXmg","type":"tablet"},
+    {"brand":"...","manufacturer":"...","pricePe₹trip":"₹ XX","strength":"XXmg","type":"tablet"}
+  ],
+  "dosageSimple": "e.g. 20mg once daily after food",
+  "dosageDetails": "single string: adult dose, timing, food, renal, hepatic, elderly, pediatric",
+  "canBuyWithout": false,
+  "fdaApproved": true,
+  "whoEssential": true,
+  "genericAvailable": true,
+  "avgMonthlyCostINR": "₹ XX-XX",
+  "pregnancyCategory": "B",
+  "controlled": false,
+  "knownInteractionsCount": 0,
+  "approvalTimeline": [
+    {"event":"Fi₹t clinical trials","year":"1957"},
+    {"event":"FDA Approval","year":"March 1994"},
+    {"event":"Generic ve₹ions approved","year":"2002"},
+    {"event":"WHO Essential Medicines List","year":"2007"}
+  ],
+  "disclaimer": "Always consult a licensed doctor or pharmacist."
+}
+
+RULES:
+1. sideEffects severity: MAJOR / MODERATE / MINOR only
+2. approvalTimeline: real yea₹ only, never placeholder text
+3. dosageDetails: single plain string, not object or array
+4. indianManufacture₹: 5 real Indian brands ordered cheapest fi₹t
+5. avgMonthlyCostINR: based on cheapest generic × monthly doses. Real prices — Metformin 500mg: ₹ 80-150/month, Tamoxifen 20mg: ₹ 150-250/month, Atorvastatin 10mg: ₹ 80-180/month, Omeprazole 20mg: ₹ 60-120/month. Most generics are under ₹ 500/month.
+6. No text outside the JSON object`;
+
+const RESEARCH_SYSTEM_PROMPT = `You are MedLens AI — a clinical pharmacology assistant.
+
+Answer ONLY questions about medicines, drug interactions, pharmacology, and clinical topics.
+For anything off-topic respond exactly: "I'm MedLens AI. I can only answer questions about medicines and pharmacology."
+
+Guidelines:
+- Use precise pharmacological terminology
+- Cite mechanism, PK/PD, and clinical evidence where relevant
+- Distinguish FDA-approved vs off-label uses explicitly
+- Flag major drug interactions and contraindications prominently
+- End safety-critical answe₹ with: "Consult a licensed healthcare professional before making clinical decisions."
+- Do not prescribe, diagnose, or give pe₹onal medical advice`;
+
+// ── Health ────────────────────────────────────────────────────────────────────
+
+app.get("/api/health", (req, res) => {
+  res.json({
+    status: "ok",
+    groqEnabled: true,
+    groqModel: GROQ_MODEL,
+    consumerModel: `${GROQ_MODEL} (Groq)`,
+    researchModel: `${GROQ_MODEL} (Groq)`,
+    consumerModelReady: true,
+    researchModelReady: true,
+  });
+});
+
+// ── Consumer ──────────────────────────────────────────────────────────────────
+
+app.post("/api/consumer/drug", async (req, res) => {
+  const { name } = req.body;
+  if (!name?.trim()) return res.status(400).json({ error: "name is required" });
+  console.log(`[CONSUMER] "${name}" → Groq (${GROQ_MODEL})`);
+
+  res.setHeader("Content-Type", "text/event-stream");
+  res.setHeader("Cache-Control", "no-cache");
+  res.setHeader("Connection", "keep-alive");
+  res.flushHeaders();
+
+  const prompt = CONSUMER_SYSTEM_PROMPT.replace(/%medicine%/g, name.trim());
   try {
-    const ollamaRes = await axios.get(`${OLLAMA_BASE_URL}/api/tags`, { timeout: 3000 });
-    const models = ollamaRes.data.models?.map((m) => m.name) || [];
-    const biomistralReady = models.some((m) => m.toLowerCase().includes("biomistral"));
-    res.json({
-      status: "ok",
-      ollama: "connected",
-      models,
-      biomistralReady,
-      activeModel: MODEL,
+    const start = Date.now();
+    const completion = await groq.chat.completions.create({
+      model: GROQ_MODEL,
+      messages: [{ role: "user", content: prompt }],
+      temperature: 0.1,
+      max_tokens: 1600,
+      response_format: { type: "json_object" },
     });
+    const elapsed = ((Date.now() - start) / 1000).toFixed(1);
+    const text = completion.choices[0]?.message?.content || "";
+    console.log(`[GROQ] consumer done — ${completion.usage?.completion_tokens} tokens in ${elapsed}s`);
+    const result = JSON.parse(text);
+    result._modelUsed = GROQ_MODEL;
+    result._source = "groq";
+    res.write(`data: ${JSON.stringify({ done: true, result })}\n\n`);
+    res.end();
   } catch (err) {
-    res.status(503).json({
-      status: "degraded",
-      ollama: "unreachable",
-      error: err.message,
-      hint: "Make sure Ollama is running: `ollama serve`",
-    });
+    console.error(`[GROQ] consumer error: ${err.message}`);
+    res.write(`data: ${JSON.stringify({ error: err.message })}\n\n`);
+    res.end();
   }
 });
 
-// List available models
-app.get("/api/models", async (req, res) => {
-  try {
-    const { data } = await axios.get(`${OLLAMA_BASE_URL}/api/tags`);
-    res.json({ models: data.models || [] });
-  } catch (err) {
-    res.status(503).json({ error: "Cannot reach Ollama", detail: err.message });
-  }
-});
+// ── Chat ──────────────────────────────────────────────────────────────────────
 
-// Main research query — streaming
-app.post("/api/research/stream", async (req, res) => {
-  const { query, model = MODEL, history = [] } = req.body;
+app.post("/api/chat", async (req, res) => {
+  const { message, drugContext, history = [] } = req.body;
+  if (!message?.trim()) return res.status(400).json({ error: "message is required" });
+  console.log(`[CHAT] "${message.slice(0, 60)}" → Groq (${GROQ_MODEL})`);
 
-  if (!query?.trim()) return res.status(400).json({ error: "query is required" });
-  const sys_prompt = SYSTEM_PROMPT.replace("%medicine%", query.trim());
-  // Build message history
+  const systemMsg = RESEARCH_SYSTEM_PROMPT +
+    (drugContext ? `\n\nDrug context: user is researching "${drugContext}". Answer in that context where relevant.` : "");
+
   const messages = [
-    { role: "system", content: sys_prompt },
+    { role: "system", content: systemMsg },
     ...history.map(({ role, content }) => ({ role, content })),
-    { role: "user", content: query },
+    { role: "user", content: message },
   ];
 
-  // SSE headers
   res.setHeader("Content-Type", "text/event-stream");
   res.setHeader("Cache-Control", "no-cache");
   res.setHeader("Connection", "keep-alive");
   res.flushHeaders();
 
   try {
-    const ollamaRes = await axios.post(
-      `${OLLAMA_BASE_URL}/api/chat`,
-      { model, messages, stream: true },
-      { responseType: "stream", timeout: 120_000 }
-    );
-
-    let buffer = "";
-
-    ollamaRes.data.on("data", (chunk) => {
-      buffer += chunk.toString();
-      const lines = buffer.split("\n");
-      buffer = lines.pop(); // keep incomplete line
-
-      for (const line of lines) {
-        if (!line.trim()) continue;
-        try {
-          const parsed = JSON.parse(line);
-          const token = parsed.message?.content || "";
-          if (token) res.write(`data: ${JSON.stringify({ token })}\n\n`);
-          if (parsed.done) res.write(`data: ${JSON.stringify({ done: true })}\n\n`);
-        } catch (_) {}
-      }
+    const stream = await groq.chat.completions.create({
+      model: GROQ_MODEL,
+      messages,
+      temperature: 0.3,
+      max_tokens: 1024,
+      stream: true,
     });
-
-    ollamaRes.data.on("end", () => {
-      res.write(`data: ${JSON.stringify({ done: true })}\n\n`);
-      res.end();
-    });
-
-    ollamaRes.data.on("error", (err) => {
-      res.write(`data: ${JSON.stringify({ error: err.message })}\n\n`);
-      res.end();
-    });
+    for await (const chunk of stream) {
+      const token = chunk.choices[0]?.delta?.content || "";
+      if (token) res.write(`data: ${JSON.stringify({ token })}\n\n`);
+    }
+    res.write(`data: ${JSON.stringify({ done: true })}\n\n`);
+    res.end();
   } catch (err) {
-    const hint =
-      err.code === "ECONNREFUSED"
-        ? "Ollama is not running. Start it with: ollama serve"
-        : err.response?.status === 404
-        ? `Model '${model}' not found. Pull it with: ollama pull ${model}`
-        : err.message;
-    res.write(`data: ${JSON.stringify({ error: hint })}\n\n`);
+    console.error(`[GROQ] chat error: ${err.message}`);
+    res.write(`data: ${JSON.stringify({ error: err.message })}\n\n`);
     res.end();
   }
 });
 
-// Non-streaming research query
-app.post("/api/research", async (req, res) => {
-  const { query, model = MODEL, history = [] } = req.body;
-  if (!query?.trim()) return res.status(400).json({ error: "query is required" });
+// ── Start ─────────────────────────────────────────────────────────────────────
 
-  const messages = [
-    { role: "system", content: SYSTEM_PROMPT },
-    ...history,
-    { role: "user", content: query },
-  ];
-
-  try {
-    const { data } = await axios.post(
-      `${OLLAMA_BASE_URL}/api/chat`,
-      { model, messages, stream: false },
-      { timeout: 120_000 }
-    );
-    res.json({
-      response: data.message?.content || "",
-      model: data.model,
-      totalDuration: data.total_duration,
-    });
-  } catch (err) {
-    const status = err.code === "ECONNREFUSED" ? 503 : 500;
-    res.status(status).json({ error: err.message });
-  }
-});
-
-// ── Consumer drug search — format:json forces valid JSON output ─────────────
-app.post("/api/consumer/drug", async (req, res) => {
-  const { name } = req.body;
-  if (!name?.trim()) return res.status(400).json({ error: "name is required" });
-
-  const prompt = CONSUMER_SYSTEM_PROMPT.replace("%medicine%", name.trim());
-
-  try {
-    const ollamaRes = await axios.post(
-      `${OLLAMA_BASE_URL}/api/generate`,
-      {
-        model: MODEL,
-        prompt,
-        stream: true,
-        format: "json",
-        options: { temperature: 0.1, num_ctx: 4096, num_predict: 2048 },
-      },
-      { responseType: "stream", timeout: 300_000 }
-    );
-
-    let fullText = "";
-    let buffer = "";
-
-    await new Promise((resolve, reject) => {
-      ollamaRes.data.on("data", (chunk) => {
-        buffer += chunk.toString();
-        const lines = buffer.split("\n");
-        buffer = lines.pop();
-        for (const line of lines) {
-          if (!line.trim()) continue;
-          try {
-            const parsed = JSON.parse(line);
-            fullText += parsed.response || "";
-          } catch {}
-        }
-      });
-      ollamaRes.data.on("end", resolve);
-      ollamaRes.data.on("error", reject);
-    });
-
-    console.log("[DEBUG] output:", fullText.slice(0, 200));
-
-    try {
-      res.json(JSON.parse(fullText));
-    } catch {
-      res.status(500).json({ error: "Model returned non-JSON", raw: fullText });
-    }
-  } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
-});
-
-// ── Start ───────────────────────────────────────────────────────────────────
 app.listen(PORT, () => {
-  console.log(`\n🧬 Drug Research API running at http://localhost:${PORT}`);
-  console.log(`   Ollama endpoint : ${OLLAMA_BASE_URL}`);
-  console.log(`   Active model    : ${MODEL}`);
-  console.log(`\n   Setup checklist:`);
-  console.log(`   1. ollama serve`);
-  console.log(`   2. ollama pull biomistral`);
-  console.log(`   3. node server.js\n`);
+  console.log(`\n💊 MedLens API running at http://localhost:${PORT}`);
+  console.log(`   Consumer : Groq → ${GROQ_MODEL}  ← /api/consumer/drug`);
+  console.log(`   Chat     : Groq → ${GROQ_MODEL}  ← /api/chat`);
+  console.log(`   ✓ Ready\n`);
 });
