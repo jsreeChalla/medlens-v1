@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MedLens — Understand Your Medicine</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  --bg: #f5f3ef;
+  --white: #ffffff;
+  --surface: #faf9f7;
+  --border: #e8e4dc;
+  --border-dark: #d4cfc4;
+  --ink: #1e1c18;
+  --ink-mid: #5a5650;
+  --ink-light: #9a948a;
+  --teal: #0d7e6e;
+  --teal-light: #e8f5f2;
+  --teal-mid: #b8e0da;
+  --amber: #c96a00;
+  --amber-light: #fff4e6;
+  --amber-mid: #ffd9a8;
+  --red: #c0392b;
+  --red-light: #fdf0ef;
+  --red-mid: #f5bfbb;
+  --blue: #1a5fa8;
+  --blue-light: #eef4fc;
+  --blue-mid: #b8d4f0;
+  --green: #1e7e44;
+  --green-light: #eef8f2;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow: 0 4px 16px rgba(0,0,0,0.07), 0 1px 4px rgba(0,0,0,0.05);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.1), 0 2px 8px rgba(0,0,0,0.06);
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+}
+
+header {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+.header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.logo { display: flex; align-items: center; gap: 10px; }
+
+.logo-icon {
+  width: 36px; height: 36px;
+  background: var(--teal);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+}
+
+.logo-name { font-family: 'Lora', serif; font-size: 20px; font-weight: 600; }
+.logo-name span { color: var(--teal); }
+.logo-tagline { font-size: 11px; color: var(--ink-light); }
+
+.server-status {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 12px; color: var(--ink-light);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 5px 12px; border-radius: 20px;
+}
+
+.sdot { width: 7px; height: 7px; border-radius: 50%; background: #ccc; transition: all 0.3s; }
+.sdot.on { background: var(--teal); box-shadow: 0 0 5px rgba(13,126,110,0.4); animation: pulse 2s infinite; }
+.sdot.warn { background: var(--amber); animation: pulse 0.7s infinite; }
+.sdot.err { background: var(--red); }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+.hero {
+  background: linear-gradient(135deg, #0d7e6e 0%, #0a6459 50%, #085249 100%);
+  padding: 52px 24px 48px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: ''; position: absolute;
+  top: -60px; right: -60px;
+  width: 280px; height: 280px;
+  background: rgba(255,255,255,0.04); border-radius: 50%;
+}
+
+.hero h1 {
+  font-family: 'Lora', serif; font-size: 30px; font-weight: 600;
+  color: #fff; margin-bottom: 8px; position: relative; z-index: 1;
+}
+
+.hero p {
+  color: rgba(255,255,255,0.75); font-size: 15px;
+  margin-bottom: 28px; position: relative; z-index: 1;
+}
+
+.search-box {
+  max-width: 560px; margin: 0 auto;
+  display: flex; background: var(--white);
+  border-radius: 12px; box-shadow: var(--shadow-lg);
+  overflow: hidden; position: relative; z-index: 1;
+}
+
+.search-box input {
+  flex: 1; border: none; outline: none;
+  padding: 16px 20px;
+  font-family: 'Nunito', sans-serif; font-size: 15px; font-weight: 500;
+  color: var(--ink); background: transparent;
+}
+
+.search-box input::placeholder { color: var(--ink-light); font-weight: 400; }
+
+.search-btn {
+  background: var(--teal); border: none; padding: 0 24px;
+  cursor: pointer; color: white;
+  font-family: 'Nunito', sans-serif; font-size: 14px; font-weight: 700;
+  transition: background 0.2s; display: flex; align-items: center; gap: 7px;
+}
+
+.search-btn:hover { background: #0a6459; }
+.search-btn:disabled { background: var(--border-dark); cursor: not-allowed; }
+
+.popular-searches {
+  margin-top: 16px; display: flex; flex-wrap: wrap;
+  gap: 8px; justify-content: center; position: relative; z-index: 1;
+}
+
+.pop-chip {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: rgba(255,255,255,0.9);
+  padding: 5px 13px; border-radius: 20px; font-size: 12px;
+  cursor: pointer; transition: all 0.2s;
+}
+.pop-chip:hover { background: rgba(255,255,255,0.25); color: #fff; }
+
+.main { max-width: 960px; margin: 0 auto; padding: 32px 24px 60px; }
+
+.loading { text-align: center; padding: 60px 0; }
+
+.loading-spinner {
+  width: 44px; height: 44px;
+  border: 3px solid var(--teal-mid);
+  border-top-color: var(--teal);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 16px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading p { color: var(--ink-mid); font-size: 14px; }
+
+.error-box {
+  background: var(--red-light); border: 1px solid var(--red-mid);
+  border-radius: var(--radius); padding: 20px 24px;
+  display: flex; gap: 14px; align-items: flex-start;
+}
+.error-title { font-weight: 700; color: var(--red); font-size: 14px; margin-bottom: 4px; }
+.error-msg { font-size: 13px; color: var(--ink-mid); }
+
+.drug-banner {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 22px 26px;
+  margin-bottom: 22px; box-shadow: var(--shadow-sm);
+  display: flex; align-items: flex-start;
+  justify-content: space-between; gap: 16px; flex-wrap: wrap;
+}
+
+.drug-name-block h2 {
+  font-family: 'Lora', serif; font-size: 26px; font-weight: 600;
+  color: var(--ink); margin-bottom: 3px;
+}
+.drug-generic { font-size: 13px; color: var(--ink-light); }
+
+.rx-badge {
+  display: flex; align-items: center; gap: 6px;
+  padding: 7px 14px; border-radius: 8px;
+  font-size: 13px; font-weight: 700; white-space: nowrap; flex-shrink: 0;
+}
+.rx-badge.otc { background: var(--green-light); color: var(--green); }
+.rx-badge.rx  { background: var(--amber-light); color: var(--amber); }
+
+.plain-english {
+  background: var(--teal); border-radius: var(--radius);
+  padding: 24px 26px; margin-bottom: 22px;
+  color: white; position: relative; overflow: hidden;
+}
+.plain-english::before {
+  content: '💬'; position: absolute;
+  right: 20px; top: 16px; font-size: 36px; opacity: 0.2;
+}
+.plain-english-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase; opacity: 0.8; margin-bottom: 10px;
+}
+.plain-english-text { font-size: 16px; line-height: 1.7; }
+.how-it-works {
+  margin-top: 12px; padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  font-size: 13px; opacity: 0.85; line-height: 1.6;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px; margin-bottom: 16px;
+}
+@media (max-width: 640px) { .cards-grid { grid-template-columns: 1fr; } }
+
+.card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 20px 22px; box-shadow: var(--shadow-sm);
+}
+
+.card-header { display: flex; align-items: center; gap: 9px; margin-bottom: 14px; }
+
+.card-icon {
+  width: 34px; height: 34px; border-radius: 9px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; flex-shrink: 0;
+}
+
+.card-title { font-size: 14px; font-weight: 700; color: var(--ink); }
+.card-subtitle { font-size: 11px; color: var(--ink-light); }
+
+.tag-list { display: flex; flex-wrap: wrap; gap: 7px; }
+.tag {
+  background: var(--blue-light); color: var(--blue);
+  border: 1px solid var(--blue-mid);
+  padding: 5px 11px; border-radius: 20px;
+  font-size: 12px; font-weight: 600;
+}
+
+.se-section-label {
+  font-size: 10px; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--ink-light); margin: 10px 0 6px;
+}
+.se-section-label:first-child { margin-top: 0; }
+
+.se-list { list-style: none; }
+.se-list li {
+  display: flex; align-items: flex-start; gap: 8px;
+  font-size: 13px; color: var(--ink-mid); padding: 3px 0; line-height: 1.5;
+}
+.se-list li::before { content: '•'; font-size: 16px; line-height: 1.2; flex-shrink: 0; }
+.se-list.common li::before  { color: var(--amber); }
+.se-list.serious li::before { color: var(--red); }
+
+.interaction-item {
+  padding: 9px 0; border-bottom: 1px solid var(--border);
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.interaction-item:last-child { border-bottom: none; padding-bottom: 0; }
+.interaction-drug {
+  font-size: 12px; font-weight: 700; color: var(--red);
+  background: var(--red-light); padding: 3px 9px; border-radius: 5px;
+  white-space: nowrap; flex-shrink: 0; margin-top: 1px;
+}
+.interaction-effect { font-size: 13px; color: var(--ink-mid); line-height: 1.5; }
+
+.warning-item {
+  display: flex; gap: 9px; align-items: flex-start;
+  padding: 6px 0; font-size: 13px; color: var(--ink-mid); line-height: 1.5;
+}
+.warning-item::before { content: '⚠️'; font-size: 13px; flex-shrink: 0; margin-top: 1px; }
+
+.dosage-text { font-size: 14px; color: var(--ink); line-height: 1.6; }
+
+.section-title {
+  font-family: 'Lora', serif; font-size: 20px; font-weight: 600;
+  color: var(--ink); margin-bottom: 14px;
+  display: flex; align-items: center; gap: 10px;
+}
+
+.mfr-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.mfr-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 18px 20px; box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.mfr-card:hover { box-shadow: var(--shadow); transform: translateY(-1px); }
+
+.mfr-brand { font-size: 16px; font-weight: 700; color: var(--ink); margin-bottom: 3px; }
+.mfr-company { font-size: 12px; color: var(--ink-light); margin-bottom: 12px; }
+.mfr-footer { display: flex; align-items: center; justify-content: space-between; }
+.mfr-price { font-size: 18px; font-weight: 700; color: var(--teal); }
+.mfr-price-label { font-size: 10px; color: var(--ink-light); }
+.mfr-type {
+  background: var(--surface); border: 1px solid var(--border);
+  color: var(--ink-mid); padding: 4px 10px; border-radius: 20px;
+  font-size: 11px; font-weight: 600; text-transform: capitalize;
+}
+
+.disclaimer {
+  margin-top: 28px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-left: 3px solid var(--teal);
+  border-radius: 8px; padding: 14px 18px;
+  font-size: 12px; color: var(--ink-light); line-height: 1.6;
+}
+
+.welcome { text-align: center; padding: 60px 24px; }
+.welcome-icon { font-size: 52px; margin-bottom: 16px; }
+.welcome h2 { font-family: 'Lora', serif; font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
+.welcome p { font-size: 14px; color: var(--ink-mid); max-width: 400px; margin: 0 auto; line-height: 1.7; }
+
+.feature-pills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 24px; }
+.feature-pill {
+  background: var(--white); border: 1px solid var(--border); border-radius: 10px;
+  padding: 10px 16px; font-size: 13px; color: var(--ink-mid);
+  display: flex; align-items: center; gap: 7px; box-shadow: var(--shadow-sm);
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">
+      <div class="logo-icon">💊</div>
+      <div>
+        <div class="logo-name">Med<span>Lens</span></div>
+        <div class="logo-tagline">Your medicine guide in plain English</div>
+      </div>
+    </div>
+    <div class="server-status">
+      <div class="sdot warn" id="sdot"></div>
+      <span id="stext">checking…</span>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>What medicine do you want to understand?</h1>
+  <p>Search by brand name or generic name — we'll explain everything in simple words</p>
+  <div class="search-box">
+    <input type="text" id="searchInput"
+      placeholder="e.g. Paracetamol, Metformin, Crocin, Pantop…"
+      onkeydown="if(event.key==='Enter') doSearch()"
+      autocomplete="off" />
+    <button class="search-btn" id="searchBtn" onclick="doSearch()">🔍 Search</button>
+  </div>
+  <div class="popular-searches">
+    <span style="color:rgba(255,255,255,0.55);font-size:12px;align-self:center;">Try:</span>
+    <div class="pop-chip" onclick="searchFor('Paracetamol')">Paracetamol</div>
+    <div class="pop-chip" onclick="searchFor('Metformin')">Metformin</div>
+    <div class="pop-chip" onclick="searchFor('Omeprazole')">Omeprazole</div>
+    <div class="pop-chip" onclick="searchFor('Azithromycin')">Azithromycin</div>
+    <div class="pop-chip" onclick="searchFor('Atorvastatin')">Atorvastatin</div>
+    <div class="pop-chip" onclick="searchFor('Amlodipine')">Amlodipine</div>
+  </div>
+</div>
+
+<div class="main" id="main">
+  <div class="welcome" id="welcomeState">
+    <div class="welcome-icon">🧬</div>
+    <h2>Search any medicine above</h2>
+    <p>Get easy-to-understand information about uses, side effects, prices, and which Indian brands make it.</p>
+    <div class="feature-pills">
+      <div class="feature-pill">💬 Plain English explanation</div>
+      <div class="feature-pill">⚠️ Side effects &amp; warnings</div>
+      <div class="feature-pill">🔄 Drug interactions</div>
+      <div class="feature-pill">🇮🇳 Indian brands &amp; prices</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const API = 'http://localhost:3001';
+
+async function checkHealth() {
+  const dot = document.getElementById('sdot');
+  const txt = document.getElementById('stext');
+  try {
+    const res = await fetch(`${API}/api/health`);
+    const d = await res.json();
+    if (d.ollama === 'connected') {
+      dot.className = 'sdot on';
+      txt.textContent = d.biomistralReady ? 'Ready' : 'Pull biomistral first';
+      if (!d.biomistralReady) dot.className = 'sdot warn';
+    } else {
+      dot.className = 'sdot err';
+      txt.textContent = 'Ollama offline';
+    }
+  } catch {
+    dot.className = 'sdot err';
+    txt.textContent = 'Server offline';
+  }
+}
+
+function searchFor(name) {
+  document.getElementById('searchInput').value = name;
+  doSearch();
+}
+
+async function doSearch() {
+  const name = document.getElementById('searchInput').value.trim();
+  if (!name) return;
+  const btn = document.getElementById('searchBtn');
+  btn.disabled = true;
+  btn.textContent = '⏳ Searching…';
+  showLoading(name);
+
+  try {
+    const res = await fetch(`${API}/api/consumer/drug`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name })
+    });
+    const data = await res.json();
+    if (data.error) showError(data.error, data.raw);
+    else renderResult(data);
+  } catch (err) {
+    showError('Could not reach the server. Make sure it\'s running on port 3001.', '');
+  }
+
+  btn.disabled = false;
+  btn.innerHTML = '🔍 Search';
+}
+
+function showLoading(name) {
+  document.getElementById('main').innerHTML = `
+    <div class="loading">
+      <div class="loading-spinner"></div>
+      <p>Looking up <strong>${esc(name)}</strong> — this may take a moment…</p>
+    </div>`;
+}
+
+function showError(msg, raw) {
+  document.getElementById('main').innerHTML = `
+    <div class="error-box">
+      <div style="font-size:22px">⚠️</div>
+      <div>
+        <div class="error-title">Something went wrong</div>
+        <div class="error-msg">${esc(msg)}</div>
+        ${raw ? `<details style="margin-top:8px"><summary style="font-size:12px;cursor:pointer;color:var(--ink-light)">Raw model output</summary><pre style="font-size:11px;margin-top:6px;white-space:pre-wrap;color:var(--ink-mid)">${esc(raw)}</pre></details>` : ''}
+      </div>
+    </div>`;
+}
+
+function renderResult(d) {
+  const arr = (v) => Array.isArray(v) ? v : [];
+
+  const rxBadge = d.canBuyWithout
+    ? `<div class="rx-badge otc">✅ No Prescription Needed</div>`
+    : `<div class="rx-badge rx">📋 Prescription Required</div>`;
+
+  const commonSE  = arr(d.sideEffects?.common).map(s => `<li>${esc(s)}</li>`).join('');
+  const seriousSE = arr(d.sideEffects?.serious).map(s => `<li>${esc(s)}</li>`).join('');
+
+  const interactions = arr(d.interactions).map(i => `
+    <div class="interaction-item">
+      <div class="interaction-drug">${esc(i.drug)}</div>
+      <div class="interaction-effect">${esc(i.effect)}</div>
+    </div>`).join('') || `<p style="font-size:13px;color:var(--ink-light)">No major interactions listed</p>`;
+
+  const warnings = arr(d.warnings).map(w => `<div class="warning-item">${esc(w)}</div>`).join('');
+
+  const usedFor = arr(d.usedFor).map(u => `<div class="tag">${esc(u)}</div>`).join('');
+
+  const mfrCards = arr(d.indianManufacturers).map(m => `
+    <div class="mfr-card">
+      <div class="mfr-brand">${esc(m.brand)}</div>
+      <div class="mfr-company">${esc(m.manufacturer)}</div>
+      <div class="mfr-footer">
+        <div>
+          <div class="mfr-price">${esc(m.pricePerStrip)}</div>
+          <div class="mfr-price-label">per strip</div>
+        </div>
+        <div class="mfr-type">${esc(m.type || 'tablet')}</div>
+      </div>
+    </div>`).join('') || `<p style="color:var(--ink-light);font-size:13px">No manufacturer data available</p>`;
+
+  document.getElementById('main').innerHTML = `
+    <div class="drug-banner">
+      <div class="drug-name-block">
+        <h2>${esc(d.name || d.genericName || 'Unknown')}</h2>
+        <div class="drug-generic">Generic name: ${esc(d.genericName || '—')}</div>
+      </div>
+      ${rxBadge}
+    </div>
+
+    <div class="plain-english">
+      <div class="plain-english-label">In Plain English</div>
+      <div class="plain-english-text">${esc(d.plainEnglishSummary || '')}</div>
+      ${d.howItWorks ? `<div class="how-it-works">💡 <strong>How it works:</strong> ${esc(d.howItWorks)}</div>` : ''}
+    </div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon" style="background:var(--blue-light)">🎯</div>
+          <div>
+            <div class="card-title">What It's Used For</div>
+            <div class="card-subtitle">Conditions this medicine treats</div>
+          </div>
+        </div>
+        <div class="tag-list">${usedFor || '<span style="font-size:13px;color:var(--ink-light)">—</span>'}</div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon" style="background:var(--green-light)">⏰</div>
+          <div>
+            <div class="card-title">How to Take It</div>
+            <div class="card-subtitle">General dosage guidance</div>
+          </div>
+        </div>
+        <div class="dosage-text">${esc(d.dosageSimple || "Follow your doctor's instructions.")}</div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon" style="background:var(--amber-light)">🌡️</div>
+          <div>
+            <div class="card-title">Side Effects</div>
+            <div class="card-subtitle">What you might experience</div>
+          </div>
+        </div>
+        ${commonSE  ? `<div class="se-section-label">Common (less serious)</div><ul class="se-list common">${commonSE}</ul>` : ''}
+        ${seriousSE ? `<div class="se-section-label">Serious — see a doctor</div><ul class="se-list serious">${seriousSE}</ul>` : ''}
+        ${!commonSE && !seriousSE ? '<p style="font-size:13px;color:var(--ink-light)">No side effects listed</p>' : ''}
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon" style="background:var(--amber-light)">⚠️</div>
+          <div>
+            <div class="card-title">Important Warnings</div>
+            <div class="card-subtitle">Who should be careful</div>
+          </div>
+        </div>
+        ${warnings || '<p style="font-size:13px;color:var(--ink-light)">No specific warnings listed</p>'}
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:22px">
+      <div class="card-header">
+        <div class="card-icon" style="background:var(--red-light)">🔄</div>
+        <div>
+          <div class="card-title">Drug Interactions</div>
+          <div class="card-subtitle">Medicines that don't mix well with this one</div>
+        </div>
+      </div>
+      ${interactions}
+    </div>
+
+    <div class="section-title">🇮🇳 Available Brands in India</div>
+    <div class="mfr-grid">${mfrCards}</div>
+
+    <div class="disclaimer">
+      <strong>Important:</strong> ${esc(d.disclaimer || 'This information is for general awareness only and does not replace professional medical advice. Always consult a qualified doctor or pharmacist before starting, stopping, or changing any medication.')}
+    </div>
+  `;
+}
+
+function esc(t) {
+  if (t == null) return '';
+  return String(t)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+checkHealth();
+</script>
+</body>
+</html>
