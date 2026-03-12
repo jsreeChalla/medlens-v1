@@ -1114,7 +1114,7 @@
 		</div>
 
 		<script>
-			const API = 'http://localhost:3001';
+			const API = '';
 			let currentDrug = null;
 			let chatHistory = [];
 			let chatStreaming = false;
@@ -1123,7 +1123,7 @@
 				const dot = document.getElementById('sdot');
 				const txt = document.getElementById('stext');
 				try {
-					const d = await fetch(`${API}`).then((r) => r.json());
+					const d = await fetch(`${API}/api/health`).then((r) => r.json());
 					if (d.status === 'ok') {
 						dot.className = 'sdot on';
 						txt.textContent = d.groqEnabled ? `Groq · ${d.groqModel}` : 'Ready';

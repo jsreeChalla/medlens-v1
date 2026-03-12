@@ -1,4 +1,5 @@
 require("dotenv").config();
+const path = require("path");
 const express = require("express");
 const cors = require("cors");
 const rateLimit = require("express-rate-limit");
@@ -17,6 +18,13 @@ if (!GROQ_API_KEY) {
 const groq = new Groq({ apiKey: GROQ_API_KEY });
 app.use(cors({ origin: "*" }));
 app.use(express.json());
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/index.html"));
+});
+
+// Also, tell Express to serve CSS/JS/Images from the frontend folder
+app.use(express.static(path.join(__dirname, "../frontend")));
+
 app.use("/api/", rateLimit({ windowMs: 60_000, max: 60, message: { error: "Too many requests" } }));
 
 // ── Prompts ───────────────────────────────────────────────────────────────────
@@ -101,7 +109,7 @@ Guidelines:
 
 // ── Health ────────────────────────────────────────────────────────────────────
 
-app.get("/", (req, res) => {
+app.get("/api/health", (req, res) => {
   res.json({
     status: "ok",
     groqEnabled: true,
