@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const rateLimit = require("express-rate-limit");
 const Groq = require("groq-sdk");
-
+const nppaPrices = require("../nppa_prices.json");
 const app = express();
 const PORT = process.env.PORT || 3001;
 const GROQ_API_KEY = process.env.GROQ_API_KEY || "";
@@ -54,12 +54,12 @@ For "%medicine%" output:
     {"drug":"...","severity":"MINOR","effect":"..."}
   ],
   "warnings": ["...","...","...","...","..."],
-  "indianManufacture₹": [
-    {"brand":"...","manufacturer":"...","pricePe₹trip":"₹ XX","strength":"XXmg","type":"tablet"},
-    {"brand":"...","manufacturer":"...","pricePe₹trip":"₹ XX","strength":"XXmg","type":"tablet"},
-    {"brand":"...","manufacturer":"...","pricePe₹trip":"₹ XX","strength":"XXmg","type":"tablet"},
-    {"brand":"...","manufacturer":"...","pricePe₹trip":"₹ XX","strength":"XXmg","type":"tablet"},
-    {"brand":"...","manufacturer":"...","pricePe₹trip":"₹ XX","strength":"XXmg","type":"tablet"}
+  "indianManufacturers": [
+    {"brand":"...","manufacturer":"...","strength":"XXmg","type":"tablet"},
+    {"brand":"...","manufacturer":"...","strength":"XXmg","type":"tablet"},
+    {"brand":"...","manufacturer":"...","strength":"XXmg","type":"tablet"},
+    {"brand":"...","manufacturer":"...","strength":"XXmg","type":"tablet"},
+    {"brand":"...","manufacturer":"...","strength":"XXmg","type":"tablet"}
   ],
   "dosageSimple": "e.g. 20mg once daily after food",
   "dosageDetails": "single string: adult dose, timing, food, renal, hepatic, elderly, pediatric",
@@ -67,14 +67,13 @@ For "%medicine%" output:
   "fdaApproved": true,
   "whoEssential": true,
   "genericAvailable": true,
-  "avgMonthlyCostINR": "₹ XX-XX",
   "pregnancyCategory": "B",
   "controlled": false,
   "knownInteractionsCount": 0,
   "approvalTimeline": [
-    {"event":"Fi₹t clinical trials","year":"1957"},
+    {"event":"First clinical trials","year":"1957"},
     {"event":"FDA Approval","year":"March 1994"},
-    {"event":"Generic ve₹ions approved","year":"2002"},
+    {"event":"Generic versions approved","year":"2002"},
     {"event":"WHO Essential Medicines List","year":"2007"}
   ],
   "disclaimer": "Always consult a licensed doctor or pharmacist."
@@ -82,11 +81,10 @@ For "%medicine%" output:
 
 RULES:
 1. sideEffects severity: MAJOR / MODERATE / MINOR only
-2. approvalTimeline: real yea₹ only, never placeholder text
+2. approvalTimeline: real years only, never placeholder text
 3. dosageDetails: single plain string, not object or array
-4. indianManufacture₹: 5 real Indian brands ordered cheapest fi₹t
-5. avgMonthlyCostINR: based on cheapest generic × monthly doses. Real prices — Metformin 500mg: ₹ 80-150/month, Tamoxifen 20mg: ₹ 150-250/month, Atorvastatin 10mg: ₹ 80-180/month, Omeprazole 20mg: ₹ 60-120/month. Most generics are under ₹ 500/month.
-6. No text outside the JSON object`;
+4. indianManufacturers: 5 real Indian brands ordered most available first
+5. No text outside the JSON object`;
 
 const RESEARCH_SYSTEM_PROMPT = `You are MedLens AI — a clinical pharmacology assistant.
 
@@ -98,12 +96,12 @@ Guidelines:
 - Cite mechanism, PK/PD, and clinical evidence where relevant
 - Distinguish FDA-approved vs off-label uses explicitly
 - Flag major drug interactions and contraindications prominently
-- End safety-critical answe₹ with: "Consult a licensed healthcare professional before making clinical decisions."
-- Do not prescribe, diagnose, or give pe₹onal medical advice`;
+- End safety-critical answers with: "Consult a licensed healthcare professional before making clinical decisions."
+- Do not prescribe, diagnose, or give personal medical advice`;
 
 // ── Health ────────────────────────────────────────────────────────────────────
 
-app.get("/api/health", (req, res) => {
+app.get("/", (req, res) => {
   res.json({
     status: "ok",
     groqEnabled: true,
@@ -116,18 +114,54 @@ app.get("/api/health", (req, res) => {
 });
 
 // ── Consumer ──────────────────────────────────────────────────────────────────
+async function getDrugName(name) {
+try { 
+  const rxRes = await fetch(
+  `https://rxnav.nlm.nih.gov/REST/rxcui.json?name=${encodeURIComponent(name.trim())}&search=1`
+);
+const rxData = await rxRes.json();
+const rxcui = rxData.idGroup?.rxnormId?.[0];
+
+if (!rxcui) {
+  return null
+}
+
+// Get canonical name from RxNorm
+const nameRes = await fetch(`https://rxnav.nlm.nih.gov/REST/rxcui/${rxcui}/property.json?propName=RxNorm%20Name`);
+const nameData = await nameRes.json();
+const canonicalName = nameData.propConceptGroup?.propConcept?.[0]?.propValue || name.trim();
+return canonicalName;
+}catch (err) {
+  console.error(`${err.message}`);
+  return null;
+}
+}
+
+function getNppaPrices(drugName) {
+  const key = drugName.toLowerCase().trim();
+  if (nppaPrices[key]) return nppaPrices[key];
+  // Partial match — handles cases like "Metformin Hydrochloride" → "metformin"
+  const partialKey = Object.keys(nppaPrices).find(k => 
+    key.includes(k) || k.includes(key.split(" ")[0])
+  );
+  return partialKey ? nppaPrices[partialKey] : null;
+}
 
 app.post("/api/consumer/drug", async (req, res) => {
   const { name } = req.body;
   if (!name?.trim()) return res.status(400).json({ error: "name is required" });
-  console.log(`[CONSUMER] "${name}" → Groq (${GROQ_MODEL})`);
+  const drugName = await getDrugName(name);
+  if (!drugName) {
+    return res.status(400).json({ error: "Medicine not recognised. Please check the spelling and try again." });
+  }
+  console.log(`[CONSUMER] "${drugName}" → Groq (${GROQ_MODEL})`);
 
   res.setHeader("Content-Type", "text/event-stream");
   res.setHeader("Cache-Control", "no-cache");
   res.setHeader("Connection", "keep-alive");
   res.flushHeaders();
 
-  const prompt = CONSUMER_SYSTEM_PROMPT.replace(/%medicine%/g, name.trim());
+  const prompt = CONSUMER_SYSTEM_PROMPT.replace(/%medicine%/g, drugName);
   try {
     const start = Date.now();
     const completion = await groq.chat.completions.create({
@@ -141,8 +175,25 @@ app.post("/api/consumer/drug", async (req, res) => {
     const text = completion.choices[0]?.message?.content || "";
     console.log(`[GROQ] consumer done — ${completion.usage?.completion_tokens} tokens in ${elapsed}s`);
     const result = JSON.parse(text);
-    result._modelUsed = GROQ_MODEL;
-    result._source = "groq";
+
+    if (result.indianManufacturers) {
+  result.indianManufacturers = result.indianManufacturers.map(m => ({
+    ...m,
+    pricePerStrip: null
+  }));
+}
+result.avgMonthlyCostINR = null;
+
+// Attach verified NPPA ceiling prices
+const nppData = getNppaPrices(drugName);
+result.nppaCeilingPrices = nppData || null;
+result.nppaPriceDisclaimer = nppData
+  ? "Government ceiling prices per NPPA DPCO 2022. No manufacturer may legally charge above these rates."
+  : "This drug is not under NPPA price control. Prices vary by manufacturer and pharmacy.";
+
+result._modelUsed = GROQ_MODEL;
+result._source = "groq";
+
     res.write(`data: ${JSON.stringify({ done: true, result })}\n\n`);
     res.end();
   } catch (err) {
@@ -196,7 +247,7 @@ app.post("/api/chat", async (req, res) => {
 
 // ── Start ─────────────────────────────────────────────────────────────────────
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`\n💊 MedLens API running at http://localhost:${PORT}`);
   console.log(`   Consumer : Groq → ${GROQ_MODEL}  ← /api/consumer/drug`);
   console.log(`   Chat     : Groq → ${GROQ_MODEL}  ← /api/chat`);
