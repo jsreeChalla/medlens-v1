@@ -1,0 +1,4848 @@
+{
+  "halothane": [
+    {
+      "dosageForm": "Inhalation 1 ml",
+      "ceilingPriceRs": 6.5
+    }
+  ],
+  "isoflurane": [
+    {
+      "dosageForm": "Inhalation 1 ml",
+      "ceilingPriceRs": 11.61
+    }
+  ],
+  "ketamine": [
+    {
+      "dosageForm": "Injection 10 mg/ml 1 ml",
+      "ceilingPriceRs": 11.76
+    },
+    {
+      "dosageForm": "Injection 50 mg/ml 1 ml",
+      "ceilingPriceRs": 11.61
+    }
+  ],
+  "nitrous oxide": [
+    {
+      "dosageForm": "Inhalation Cubic Meter",
+      "ceilingPriceRs": 259.43
+    }
+  ],
+  "propofol": [
+    {
+      "dosageForm": "Injection 10 mg/ml 1 ml",
+      "ceilingPriceRs": 8.02
+    }
+  ],
+  "sevoflurane": [
+    {
+      "dosageForm": "Inhalation 1 ml",
+      "ceilingPriceRs": 33.21
+    }
+  ],
+  "thiopentone": [
+    {
+      "dosageForm": "Powder for Injection 0.5 g Each Pack",
+      "ceilingPriceRs": 45.23
+    },
+    {
+      "dosageForm": "Powder for Injection 1 g Each Pack",
+      "ceilingPriceRs": 54.87
+    }
+  ],
+  "bupivacaine": [
+    {
+      "dosageForm": "Injection 0.25% 1 ml",
+      "ceilingPriceRs": 2.72
+    },
+    {
+      "dosageForm": "Injection 0.5% 1 ml",
+      "ceilingPriceRs": 4.35
+    },
+    {
+      "dosageForm": "Injection 0.5% with 7.5% 1 ml",
+      "ceilingPriceRs": 6.89
+    }
+  ],
+  "lignocaine": [
+    {
+      "dosageForm": "Topical forms 2-5% 1 gm or 1 ml",
+      "ceilingPriceRs": 1.2
+    },
+    {
+      "dosageForm": "Injection 1% Each Pack",
+      "ceilingPriceRs": 8.82
+    },
+    {
+      "dosageForm": "Injection 2% 1 ml",
+      "ceilingPriceRs": 1.1
+    },
+    {
+      "dosageForm": "Injection 5% with 7.5% 1 ml",
+      "ceilingPriceRs": 4.09
+    },
+    {
+      "dosageForm": "Injection 2% 1 ml",
+      "ceilingPriceRs": 1.1
+    },
+    {
+      "dosageForm": "Injection 2%(Preservative free 1 ml",
+      "ceilingPriceRs": 1.09
+    },
+    {
+      "dosageForm": "Injection 1% Each Pack",
+      "ceilingPriceRs": 8.82
+    },
+    {
+      "dosageForm": "Topical Forms 2-5% 1 gm or 1 ml",
+      "ceilingPriceRs": 1.2
+    },
+    {
+      "dosageForm": "Injection 5% with 7.5% 1 ml",
+      "ceilingPriceRs": 4.09
+    }
+  ],
+  "lignocaine (a) +": [
+    {
+      "dosageForm": "Injection 1% (A) + 1:200000 (5 1 ml",
+      "ceilingPriceRs": 0.5
+    },
+    {
+      "dosageForm": "Injection 2% (A) + 1:200000 (5 1 ml",
+      "ceilingPriceRs": 1.02
+    }
+  ],
+  "prilocaine (a) + lignocaine": [
+    {
+      "dosageForm": "Cream 2.5% (A) + 2.5% (B) 1 gm",
+      "ceilingPriceRs": 22.71
+    }
+  ],
+  "atropine": [
+    {
+      "dosageForm": "Injection 0.6 mg/ml 1 ml",
+      "ceilingPriceRs": 4.65
+    },
+    {
+      "dosageForm": "Ointment 1% 1 gm",
+      "ceilingPriceRs": 4.2
+    },
+    {
+      "dosageForm": "Injection 0.6 mg/ml 1 ml",
+      "ceilingPriceRs": 4.65
+    },
+    {
+      "dosageForm": "Drops 1% 1 ml",
+      "ceilingPriceRs": 3.81
+    },
+    {
+      "dosageForm": "Drops 1% 1 ml",
+      "ceilingPriceRs": 3.81
+    },
+    {
+      "dosageForm": "Ointment 1% 1 gm",
+      "ceilingPriceRs": 4.2
+    }
+  ],
+  "glycopyrrolate": [
+    {
+      "dosageForm": "Injection 0.2 mg/ml 1 ml",
+      "ceilingPriceRs": 13.65
+    }
+  ],
+  "midazolam": [
+    {
+      "dosageForm": "Tablet 7.5 mg 1 Tablet",
+      "ceilingPriceRs": 24.92
+    },
+    {
+      "dosageForm": "Injection 1 mg/ml 1 ml",
+      "ceilingPriceRs": 6.56
+    },
+    {
+      "dosageForm": "Injection 5 mg/ml 1 ml",
+      "ceilingPriceRs": 16.12
+    },
+    {
+      "dosageForm": "Injection 1 mg/ml 1 ml",
+      "ceilingPriceRs": 6.56
+    },
+    {
+      "dosageForm": "Injection 5 mg/ml 1 ml",
+      "ceilingPriceRs": 16.12
+    },
+    {
+      "dosageForm": "Tablet 7.5mg 1 Tablet",
+      "ceilingPriceRs": 24.92
+    }
+  ],
+  "morphine": [
+    {
+      "dosageForm": "Injection 10 mg/ml 1 ml",
+      "ceilingPriceRs": 26.37
+    },
+    {
+      "dosageForm": "Injection 15 mg/ml 1 ml",
+      "ceilingPriceRs": 32.91
+    },
+    {
+      "dosageForm": "Effervescent/ Dispersible/ 1 Tablet",
+      "ceilingPriceRs": 0.2
+    },
+    {
+      "dosageForm": "Effervescent/ Dispersible/ 1 Tablet",
+      "ceilingPriceRs": 1.34
+    },
+    {
+      "dosageForm": "Effervescent/ 1 Tablet",
+      "ceilingPriceRs": 1.36
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 0.19
+    },
+    {
+      "dosageForm": "Tablet 150 mg 1 Tablet",
+      "ceilingPriceRs": 0.45
+    },
+    {
+      "dosageForm": "Tablet 325mg 1 Tablet",
+      "ceilingPriceRs": 0.61
+    },
+    {
+      "dosageForm": "Tablet 350mg 1 Tablet",
+      "ceilingPriceRs": 0.34
+    },
+    {
+      "dosageForm": "Tablet 75 mg 1 Tablet",
+      "ceilingPriceRs": 0.34
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 5.91
+    },
+    {
+      "dosageForm": "SR Tablet 30 mg 1 Tablet",
+      "ceilingPriceRs": 6.05
+    },
+    {
+      "dosageForm": "Injection 10 mg/ml 1 ml",
+      "ceilingPriceRs": 26.37
+    },
+    {
+      "dosageForm": "Injection 15 mg/ml 1 ml",
+      "ceilingPriceRs": 32.91
+    },
+    {
+      "dosageForm": "Injection 10 mg/ml 1 ml",
+      "ceilingPriceRs": 26.37
+    },
+    {
+      "dosageForm": "Injection 15 mg/ml 1 ml",
+      "ceilingPriceRs": 32.91
+    },
+    {
+      "dosageForm": "SR Tablet 30 mg 1 Tablet",
+      "ceilingPriceRs": 6.05
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 5.91
+    }
+  ],
+  "diclofenac": [
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 2.13
+    },
+    {
+      "dosageForm": "Capsule 50 mg 1 Capsule",
+      "ceilingPriceRs": 0.68
+    },
+    {
+      "dosageForm": "Injection 25 mg/ml 1 ml",
+      "ceilingPriceRs": 1.63
+    }
+  ],
+  "ibuprofen": [
+    {
+      "dosageForm": "Tablet 200 mg 1 Tablet",
+      "ceilingPriceRs": 0.65
+    },
+    {
+      "dosageForm": "Capsule 200 mg 1 soft gelatin",
+      "ceilingPriceRs": 2.97
+    },
+    {
+      "dosageForm": "Tablet 400 mg 1 Tablet",
+      "ceilingPriceRs": 1.15
+    },
+    {
+      "dosageForm": "Capsule 400 mg 1 Capsule",
+      "ceilingPriceRs": 1.17
+    },
+    {
+      "dosageForm": "Oral liquid 100 mg/5 ml 1 ml",
+      "ceilingPriceRs": 0.21
+    },
+    {
+      "dosageForm": "Tablet 250 mg 1 Tablet",
+      "ceilingPriceRs": 2.15
+    },
+    {
+      "dosageForm": "Tablet 500 mg 1 Tablet",
+      "ceilingPriceRs": 2.72
+    },
+    {
+      "dosageForm": "Oral liquid 100 mg/5 ml 1 ml",
+      "ceilingPriceRs": 0.58
+    }
+  ],
+  "paracetamol": [
+    {
+      "dosageForm": "Tablet 500 mg 1 Tablet",
+      "ceilingPriceRs": 1.01
+    },
+    {
+      "dosageForm": "Tablet 650 mg 1 Tablet",
+      "ceilingPriceRs": 2.04
+    },
+    {
+      "dosageForm": "Oral Liquid 100 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.56
+    },
+    {
+      "dosageForm": "Oral Liquid 120 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.59
+    },
+    {
+      "dosageForm": "Oral Liquid 125 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.38
+    },
+    {
+      "dosageForm": "Oral Liquid 150 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.64
+    },
+    {
+      "dosageForm": "Oral Liquid 250 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.66
+    },
+    {
+      "dosageForm": "Oral Liquid 500 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.71
+    },
+    {
+      "dosageForm": "Oral Liquid 650 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.58
+    },
+    {
+      "dosageForm": "Oral Liquid 100 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.56
+    },
+    {
+      "dosageForm": "Oral Liquid 120 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.59
+    },
+    {
+      "dosageForm": "Oral Liquid 125 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.38
+    },
+    {
+      "dosageForm": "Oral Liquid 150 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.64
+    },
+    {
+      "dosageForm": "Oral Liquid 250 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.66
+    },
+    {
+      "dosageForm": "Oral Liquid 500 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.71
+    },
+    {
+      "dosageForm": "Oral Liquid 650 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.58
+    },
+    {
+      "dosageForm": "Tablet 500 mg 1 Tablet",
+      "ceilingPriceRs": 1.01
+    },
+    {
+      "dosageForm": "Tablet 650 mg 1 Tablet",
+      "ceilingPriceRs": 2.04
+    },
+    {
+      "dosageForm": "Injection 150 mg/ml Each Pack (",
+      "ceilingPriceRs": 3.41
+    },
+    {
+      "dosageForm": "Injection 150 mg/ml Each Pack (1 ml)",
+      "ceilingPriceRs": 4.66
+    },
+    {
+      "dosageForm": "Injection 150 mg/ml Each Pack (2 ml)",
+      "ceilingPriceRs": 7.16
+    },
+    {
+      "dosageForm": "Injection 150 mg/ml Each Pack (3 ml)",
+      "ceilingPriceRs": 9.67
+    },
+    {
+      "dosageForm": "Injection 150 mg/ml Each Pack (4 ml)",
+      "ceilingPriceRs": 12.17
+    },
+    {
+      "dosageForm": "Injection 150 mg/ml Each Pack (5 ml)",
+      "ceilingPriceRs": 14.68
+    },
+    {
+      "dosageForm": "Injection 150 mg/ml Each Pack (7 ml)",
+      "ceilingPriceRs": 19.68
+    },
+    {
+      "dosageForm": "Suppository 170 mg Each Suppository",
+      "ceilingPriceRs": 8.54
+    },
+    {
+      "dosageForm": "Suppository 80 mg Each Suppository",
+      "ceilingPriceRs": 7.22
+    }
+  ],
+  "mgml (pediatric) 1 ml": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 1.79
+    },
+    {
+      "dosageForm": "Injection 150 mg/ml Each Pack (",
+      "ceilingPriceRs": 3.41
+    },
+    {
+      "dosageForm": "Injection 150 mg/ml Each Pack (1 ml)",
+      "ceilingPriceRs": 4.66
+    },
+    {
+      "dosageForm": "Injection 150 mg/ml Each Pack (2 ml)",
+      "ceilingPriceRs": 7.16
+    },
+    {
+      "dosageForm": "Injection 150 mg/ml Each Pack (3 ml)",
+      "ceilingPriceRs": 9.67
+    },
+    {
+      "dosageForm": "Injection 150 mg/ml Each Pack (4 ml)",
+      "ceilingPriceRs": 12.17
+    },
+    {
+      "dosageForm": "Injection 150 mg/ml Each Pack (5 ml)",
+      "ceilingPriceRs": 14.68
+    },
+    {
+      "dosageForm": "Injection 150 mg/ml Each Pack (7 ml)",
+      "ceilingPriceRs": 19.68
+    },
+    {
+      "dosageForm": "Suppository 80 mg Each Suppository",
+      "ceilingPriceRs": 7.22
+    },
+    {
+      "dosageForm": "Suppository 170 mg Each Suppository",
+      "ceilingPriceRs": 8.54
+    }
+  ],
+  "fentanyl": [
+    {
+      "dosageForm": "Injection 50 mcg/ml 1 ml",
+      "ceilingPriceRs": 25.21
+    }
+  ],
+  "tramadol": [
+    {
+      "dosageForm": "Capsule 50 mg 1 Capsule",
+      "ceilingPriceRs": 5.01
+    },
+    {
+      "dosageForm": "Capsule 100 mg 1 Capsule",
+      "ceilingPriceRs": 10.66
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 21.84
+    },
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 8.95
+    },
+    {
+      "dosageForm": "Injection 50 mg/ml (20 ml 1 ml",
+      "ceilingPriceRs": 1.38
+    },
+    {
+      "dosageForm": "Injection 50 mg/ml (upto 2 ml 1 ml",
+      "ceilingPriceRs": 11.63
+    },
+    {
+      "dosageForm": "Capsule 50 mg 1 Capsule",
+      "ceilingPriceRs": 5.01
+    },
+    {
+      "dosageForm": "Injection 50 mg/ml (20 ml 1 ml",
+      "ceilingPriceRs": 1.38
+    },
+    {
+      "dosageForm": "Injection 50 mg/ml (upto 2 ml 1 ml",
+      "ceilingPriceRs": 11.63
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 21.84
+    },
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 8.95
+    },
+    {
+      "dosageForm": "Capsule 100 mg 1 Capsule",
+      "ceilingPriceRs": 10.66
+    }
+  ],
+  "allopurinol": [
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 2.12
+    },
+    {
+      "dosageForm": "Tablet 300 mg 1 Tablet",
+      "ceilingPriceRs": 8.31
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 2.12
+    },
+    {
+      "dosageForm": "Tablet 300 mg 1 Tablet",
+      "ceilingPriceRs": 8.31
+    }
+  ],
+  "colchicine": [
+    {
+      "dosageForm": "Tablet 0.5 mg 1 Tablet",
+      "ceilingPriceRs": 3.46
+    }
+  ],
+  "azathioprine": [
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 11.26
+    },
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 11.26
+    },
+    {
+      "dosageForm": "Capsule 25 mg 1 Capsule",
+      "ceilingPriceRs": 30.55
+    },
+    {
+      "dosageForm": "Capsule 50 mg 1 Capsule",
+      "ceilingPriceRs": 58.45
+    },
+    {
+      "dosageForm": "Capsule 100 mg 1 Capsule",
+      "ceilingPriceRs": 113.81
+    },
+    {
+      "dosageForm": "Injection 50 mg/ml 1 ml",
+      "ceilingPriceRs": 299.48
+    },
+    {
+      "dosageForm": "Oral Liquid 100 mg/ml 1 ml",
+      "ceilingPriceRs": 104.95
+    }
+  ],
+  "hydroxychloroquine": [
+    {
+      "dosageForm": "Tablet 200 mg 1 Tablet",
+      "ceilingPriceRs": 6.58
+    },
+    {
+      "dosageForm": "Tablet 400 mg 1 Tablet",
+      "ceilingPriceRs": 13.26
+    }
+  ],
+  "leflunomide": [
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 11.11
+    },
+    {
+      "dosageForm": "Tablet 20 mg 1 Tablet",
+      "ceilingPriceRs": 21.69
+    }
+  ],
+  "methotrexate": [
+    {
+      "dosageForm": "Injection 25 mg/ml 1 ml",
+      "ceilingPriceRs": 53.41
+    },
+    {
+      "dosageForm": "Injection 50 mg/ml 1 ml",
+      "ceilingPriceRs": 44.47
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 13.48
+    },
+    {
+      "dosageForm": "Tablet 2.5 mg 1 Tablet",
+      "ceilingPriceRs": 5.32
+    },
+    {
+      "dosageForm": "Tablet 7.5 mg 1 Tablet",
+      "ceilingPriceRs": 12.86
+    },
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 9.29
+    },
+    {
+      "dosageForm": "Injection 25 mg/ml 1 ml",
+      "ceilingPriceRs": 53.41
+    },
+    {
+      "dosageForm": "Injection 50 mg/ml 1 ml",
+      "ceilingPriceRs": 44.47
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 13.48
+    },
+    {
+      "dosageForm": "Tablet 2.5 mg 1 Tablet",
+      "ceilingPriceRs": 5.32
+    },
+    {
+      "dosageForm": "Tablet 7.5 mg 1 Tablet",
+      "ceilingPriceRs": 12.86
+    },
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 9.29
+    }
+  ],
+  "sulfasalazine": [
+    {
+      "dosageForm": "Tablet 500 mg 1 Tablet",
+      "ceilingPriceRs": 4.42
+    }
+  ],
+  "adrenaline": [
+    {
+      "dosageForm": "Injection 1 mg/ml 1 ml",
+      "ceilingPriceRs": 17.38
+    }
+  ],
+  "cetirizine": [
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 1.84
+    },
+    {
+      "dosageForm": "Capsule 10 mg 1 Capsule",
+      "ceilingPriceRs": 2.64
+    },
+    {
+      "dosageForm": "Oral liquid 5 mg/5 ml 1 ml",
+      "ceilingPriceRs": 0.65
+    }
+  ],
+  "chlorpheniramine": [
+    {
+      "dosageForm": "Tablet 4 mg 1 Tablet",
+      "ceilingPriceRs": 0.1
+    }
+  ],
+  "dexamethasone": [
+    {
+      "dosageForm": "Tablet 0.5 mg 1 Tablet",
+      "ceilingPriceRs": 0.21
+    },
+    {
+      "dosageForm": "Injection 4 mg/ml Each Pack (10",
+      "ceilingPriceRs": 15.29
+    },
+    {
+      "dosageForm": "Injection 4 mg/ml Each Pack (2 ml)",
+      "ceilingPriceRs": 10.35
+    },
+    {
+      "dosageForm": "Injection 4 mg/ml Each Pack (20",
+      "ceilingPriceRs": 29.31
+    },
+    {
+      "dosageForm": "Injection 4 mg/ml Each Pack (30",
+      "ceilingPriceRs": 39.17
+    },
+    {
+      "dosageForm": "Tablet 0.5 mg 1 Tablet",
+      "ceilingPriceRs": 0.21
+    },
+    {
+      "dosageForm": "Injection 4 mg/ml Each Pack (10",
+      "ceilingPriceRs": 15.29
+    },
+    {
+      "dosageForm": "Injection 4 mg/ml Each Pack (2 ml)",
+      "ceilingPriceRs": 10.35
+    },
+    {
+      "dosageForm": "Injection 4 mg/ml Each Pack (20",
+      "ceilingPriceRs": 29.31
+    },
+    {
+      "dosageForm": "Injection 4 mg/ml Each Pack (30",
+      "ceilingPriceRs": 39.17
+    },
+    {
+      "dosageForm": "Tablet 0.5 mg 1 Tablet",
+      "ceilingPriceRs": 0.21
+    },
+    {
+      "dosageForm": "Injection 4 mg/ml Each Pack (10",
+      "ceilingPriceRs": 15.29
+    },
+    {
+      "dosageForm": "Injection 4 mg/ml Each Pack (2 ml)",
+      "ceilingPriceRs": 10.35
+    },
+    {
+      "dosageForm": "Injection 4 mg/ml Each Pack (20",
+      "ceilingPriceRs": 29.31
+    },
+    {
+      "dosageForm": "Injection 4 mg/ml Each Pack (30",
+      "ceilingPriceRs": 39.17
+    }
+  ],
+  "hydrocortisone": [
+    {
+      "dosageForm": "Powder for Injection 100 mg Each Pack",
+      "ceilingPriceRs": 43.21
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 6.54
+    },
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 3.37
+    },
+    {
+      "dosageForm": "Injection 100 mg Each Pack",
+      "ceilingPriceRs": 43.21
+    },
+    {
+      "dosageForm": "Injection 200 mg Each Pack",
+      "ceilingPriceRs": 66.61
+    },
+    {
+      "dosageForm": "Powder for Injection 100 mg Each Pack",
+      "ceilingPriceRs": 43.21
+    },
+    {
+      "dosageForm": "Injection 100 mg Each Pack",
+      "ceilingPriceRs": 43.21
+    },
+    {
+      "dosageForm": "Injection 200 mg Each Pack",
+      "ceilingPriceRs": 66.61
+    }
+  ],
+  "pheniramine": [
+    {
+      "dosageForm": "Injection 22.75 mg/ml (2ml) 1 ml",
+      "ceilingPriceRs": 2.54
+    },
+    {
+      "dosageForm": "Injection 22.75 mg/ml(10ml) 1 ml",
+      "ceilingPriceRs": 1.89
+    }
+  ],
+  "prednisolone": [
+    {
+      "dosageForm": "Drops 1% 1 ml",
+      "ceilingPriceRs": 5.58
+    },
+    {
+      "dosageForm": "Injection 20 mg/2ml 1 ml",
+      "ceilingPriceRs": 3.98
+    },
+    {
+      "dosageForm": "Oral Liquid 15 mg/ 5ml 1 ml",
+      "ceilingPriceRs": 0.83
+    },
+    {
+      "dosageForm": "Oral Liquid 5 mg/ 5ml 1 ml",
+      "ceilingPriceRs": 0.48
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 1.09
+    },
+    {
+      "dosageForm": "Tablet 20 mg 1 Tablet",
+      "ceilingPriceRs": 2.17
+    },
+    {
+      "dosageForm": "Tablet 40 mg 1 Tablet",
+      "ceilingPriceRs": 3.12
+    },
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 0.62
+    },
+    {
+      "dosageForm": "Drops 1% 1 ml",
+      "ceilingPriceRs": 5.58
+    },
+    {
+      "dosageForm": "Injection 20 mg/2ml 1 ml",
+      "ceilingPriceRs": 3.98
+    },
+    {
+      "dosageForm": "Oral Liquid 15 mg/ 5ml 1 ml",
+      "ceilingPriceRs": 0.83
+    },
+    {
+      "dosageForm": "Oral Liquid 5 mg/ 5ml 1 ml",
+      "ceilingPriceRs": 0.48
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 1.09
+    },
+    {
+      "dosageForm": "Tablet 20 mg 1 Tablet",
+      "ceilingPriceRs": 2.17
+    },
+    {
+      "dosageForm": "Tablet 40 mg 1 Tablet",
+      "ceilingPriceRs": 3.12
+    },
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 0.62
+    },
+    {
+      "dosageForm": "Drops 1% 1 ml",
+      "ceilingPriceRs": 5.58
+    },
+    {
+      "dosageForm": "Injection 20 mg/2ml 1 ml",
+      "ceilingPriceRs": 3.98
+    },
+    {
+      "dosageForm": "Oral Liquid 15 mg/ 5ml 1 ml",
+      "ceilingPriceRs": 0.83
+    },
+    {
+      "dosageForm": "Oral Liquid 5 mg/ 5ml 1 ml",
+      "ceilingPriceRs": 0.48
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 1.09
+    },
+    {
+      "dosageForm": "Tablet 20 mg 1 Tablet",
+      "ceilingPriceRs": 2.17
+    },
+    {
+      "dosageForm": "Tablet 40 mg 1 Tablet",
+      "ceilingPriceRs": 3.12
+    },
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 0.62
+    },
+    {
+      "dosageForm": "Drops 1% 1 ml",
+      "ceilingPriceRs": 5.58
+    }
+  ],
+  "calcium gluconate": [
+    {
+      "dosageForm": "Injection 100 mg/ml 1 ml",
+      "ceilingPriceRs": 0.61
+    },
+    {
+      "dosageForm": "Injection 100 mg/ml 1 ml",
+      "ceilingPriceRs": 0.61
+    }
+  ],
+  "desferrioxamine": [
+    {
+      "dosageForm": "Powder for Injection 500 mg Each pack",
+      "ceilingPriceRs": 178.55
+    }
+  ],
+  "dimercaprol": [
+    {
+      "dosageForm": "Injection 50 mg/ml 1 ml",
+      "ceilingPriceRs": 222.22
+    }
+  ],
+  "methylthioninium": [
+    {
+      "dosageForm": "Injection 10 mg/ml 1 ML",
+      "ceilingPriceRs": 24.2
+    }
+  ],
+  "nacetylcysteine": [
+    {
+      "dosageForm": "Sachet 200 mg 1 gm",
+      "ceilingPriceRs": 9.99
+    },
+    {
+      "dosageForm": "Injection 200 mg/ml 1 ml",
+      "ceilingPriceRs": 24.88
+    }
+  ],
+  "naloxone": [
+    {
+      "dosageForm": "Injection 0.4 mg/ml 1 ml",
+      "ceilingPriceRs": 96.32
+    }
+  ],
+  "neostigmine": [
+    {
+      "dosageForm": "Injection 0.5 mg/ml 1 ml",
+      "ceilingPriceRs": 4.83
+    },
+    {
+      "dosageForm": "Tablet 15 mg 1 Tablet",
+      "ceilingPriceRs": 5.18
+    },
+    {
+      "dosageForm": "Tablet 15 mg 1 Tablet",
+      "ceilingPriceRs": 5.18
+    },
+    {
+      "dosageForm": "Injection 0.5 mg/ml 1 ml",
+      "ceilingPriceRs": 4.83
+    }
+  ],
+  "penicillamine": [
+    {
+      "dosageForm": "Capsule 250 mg 1 Capsule",
+      "ceilingPriceRs": 16.5
+    }
+  ],
+  "pralidoxime chloride (2": [
+    {
+      "dosageForm": "Injection 25 mg/ml 1 ml",
+      "ceilingPriceRs": 4.14
+    },
+    {
+      "dosageForm": "a) Soluble/ liquid Injection Each Pack (10",
+      "ceilingPriceRs": 480.46
+    },
+    {
+      "dosageForm": "b) Lyophilized polyvalent Powder for Injection 10 ml Pack",
+      "ceilingPriceRs": 618.71
+    }
+  ],
+  "sodium nitrite": [
+    {
+      "dosageForm": "Injection 30 mg/ml 1 ml",
+      "ceilingPriceRs": 28.85
+    }
+  ],
+  "carbamazepine": [
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 1.13
+    },
+    {
+      "dosageForm": "Tablet 200 mg 1 Tablet",
+      "ceilingPriceRs": 1.55
+    },
+    {
+      "dosageForm": "CR Tablet 200 mg 1 Tablet",
+      "ceilingPriceRs": 2.59
+    },
+    {
+      "dosageForm": "Tablet 400 mg 1 Tablet",
+      "ceilingPriceRs": 3.67
+    },
+    {
+      "dosageForm": "CR Tablet 400 mg 1 Tablet",
+      "ceilingPriceRs": 5.11
+    },
+    {
+      "dosageForm": "Oral liquid 100 mg/5 ml 1 ml",
+      "ceilingPriceRs": 0.32
+    }
+  ],
+  "clobazam": [
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 5.7
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 10.04
+    }
+  ],
+  "diazepam": [
+    {
+      "dosageForm": "Injection 5 mg/ml 1 ml",
+      "ceilingPriceRs": 6.72
+    },
+    {
+      "dosageForm": "Oral Liquid 2 mg/5ml 1 ml",
+      "ceilingPriceRs": 3.03
+    },
+    {
+      "dosageForm": "Suppository 5 mg 1 Suppository",
+      "ceilingPriceRs": 6.63
+    },
+    {
+      "dosageForm": "Tablet 2 mg 1 Tablet",
+      "ceilingPriceRs": 1.67
+    },
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 1.58
+    },
+    {
+      "dosageForm": "Injection 5 mg/ml 1 ml",
+      "ceilingPriceRs": 6.72
+    },
+    {
+      "dosageForm": "Oral Liquid 2 mg/5ml 1 ml",
+      "ceilingPriceRs": 3.03
+    },
+    {
+      "dosageForm": "Suppository 5 mg 1 Suppository",
+      "ceilingPriceRs": 6.63
+    },
+    {
+      "dosageForm": "Tablet 2 mg 1 Tablet",
+      "ceilingPriceRs": 1.67
+    },
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 1.58
+    }
+  ],
+  "levetiracetam": [
+    {
+      "dosageForm": "Tablet 250 mg 1 Tablet",
+      "ceilingPriceRs": 6.49
+    },
+    {
+      "dosageForm": "Tablet 500 mg 1 Tablet",
+      "ceilingPriceRs": 13.13
+    },
+    {
+      "dosageForm": "Tablet 750 mg 1 Tablet",
+      "ceilingPriceRs": 20.19
+    },
+    {
+      "dosageForm": "ER Tablet 750 mg 1 Tablet",
+      "ceilingPriceRs": 19.31
+    },
+    {
+      "dosageForm": "Oral liquid 100 mg/ml 1 ml",
+      "ceilingPriceRs": 4.05
+    },
+    {
+      "dosageForm": "Injection 100 mg/ml 1 ml",
+      "ceilingPriceRs": 24.22
+    }
+  ],
+  "lorazepam": [
+    {
+      "dosageForm": "Tablet 1 mg 1 Tablet",
+      "ceilingPriceRs": 2.29
+    },
+    {
+      "dosageForm": "Tablet 2 mg 1 Tablet",
+      "ceilingPriceRs": 2.79
+    },
+    {
+      "dosageForm": "Injection 2 mg/ml 1 ml",
+      "ceilingPriceRs": 8.63
+    }
+  ],
+  "magnesium sulphate": [
+    {
+      "dosageForm": "Injection 500 mg/ml 1 ml",
+      "ceilingPriceRs": 5.31
+    }
+  ],
+  "phenobarbitone": [
+    {
+      "dosageForm": "Tablet 30 mg 1 Tablet",
+      "ceilingPriceRs": 1.36
+    },
+    {
+      "dosageForm": "Tablet 60 mg 1 Tablet",
+      "ceilingPriceRs": 1.96
+    },
+    {
+      "dosageForm": "Oral liquid 20 mg/5 ml 1 ml",
+      "ceilingPriceRs": 0.49
+    },
+    {
+      "dosageForm": "Injection 200 mg/ml 1 ml",
+      "ceilingPriceRs": 21.28
+    }
+  ],
+  "phenytoin": [
+    {
+      "dosageForm": "Capsule 100 mg 1 Capsule",
+      "ceilingPriceRs": 1.69
+    },
+    {
+      "dosageForm": "Capsule 300 mg 1 Capsule",
+      "ceilingPriceRs": 4.23
+    },
+    {
+      "dosageForm": "ER Capsule 300 mg 1 Capsule",
+      "ceilingPriceRs": 4.23
+    },
+    {
+      "dosageForm": "Injection 25 mg/ml 1 ml",
+      "ceilingPriceRs": 2.79
+    },
+    {
+      "dosageForm": "Injection 50 mg/ml 1 ml",
+      "ceilingPriceRs": 5.97
+    },
+    {
+      "dosageForm": "Oral Liquid 125 mg/5ml 1 ml",
+      "ceilingPriceRs": 1.0
+    },
+    {
+      "dosageForm": "Oral Liquid 30 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.34
+    },
+    {
+      "dosageForm": "ER Tablet 300 mg 1 Tablet",
+      "ceilingPriceRs": 6.45
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 1.73
+    },
+    {
+      "dosageForm": "Tablet 300 mg 1 Tablet",
+      "ceilingPriceRs": 5.27
+    },
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 0.82
+    }
+  ],
+  "sodium valproate": [
+    {
+      "dosageForm": "Tablet 200 mg 1 Tablet",
+      "ceilingPriceRs": 3.44
+    },
+    {
+      "dosageForm": "Tablet 300 mg 1 Tablet",
+      "ceilingPriceRs": 4.41
+    },
+    {
+      "dosageForm": "CR Tablet 300 mg 1 Tablet",
+      "ceilingPriceRs": 6.99
+    },
+    {
+      "dosageForm": "Tablet 500 mg 1 Tablet",
+      "ceilingPriceRs": 7.71
+    },
+    {
+      "dosageForm": "CR Tablet 500 mg 1 Tablet",
+      "ceilingPriceRs": 10.82
+    },
+    {
+      "dosageForm": "Oral liquid 200 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.64
+    },
+    {
+      "dosageForm": "Injection 100 mg/ml 1 ml",
+      "ceilingPriceRs": 6.4
+    },
+    {
+      "dosageForm": "Tablet 200 mg 1 Tablet",
+      "ceilingPriceRs": 3.44
+    },
+    {
+      "dosageForm": "Tablet 500 mg 1 Tablet",
+      "ceilingPriceRs": 7.71
+    }
+  ],
+  "albendazole": [
+    {
+      "dosageForm": "Tablet 400 mg 1 Tablet",
+      "ceilingPriceRs": 8.55
+    },
+    {
+      "dosageForm": "Oral liquid 200 mg/5 ml 1 ml",
+      "ceilingPriceRs": 1.77
+    }
+  ],
+  "mebendazole": [
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 3.26
+    },
+    {
+      "dosageForm": "Oral liquid 100 mg/5 ml 1 ml",
+      "ceilingPriceRs": 0.85
+    }
+  ],
+  "diethylcarbamazine": [
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 0.62
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 1.57
+    },
+    {
+      "dosageForm": "Oral liquid 120 mg/5 ml 1 ml",
+      "ceilingPriceRs": 0.54
+    }
+  ],
+  "praziquantel": [
+    {
+      "dosageForm": "Tablet 600 mg 1 tablet",
+      "ceilingPriceRs": 38.57
+    }
+  ],
+  "amoxicillin": [
+    {
+      "dosageForm": "Capsule 250 mg 1 Capsule",
+      "ceilingPriceRs": 2.45
+    },
+    {
+      "dosageForm": "Capsule 500 mg 1 Capsule",
+      "ceilingPriceRs": 7.17
+    },
+    {
+      "dosageForm": "Oral liquid 250 mg/5 ml 1 ml",
+      "ceilingPriceRs": 1.5
+    }
+  ],
+  "amoxicillin (a) +": [
+    {
+      "dosageForm": "Tablet 500 mg (A) + 125 mg 1 Tablet",
+      "ceilingPriceRs": 19.95
+    },
+    {
+      "dosageForm": "Oral liquid 200 mg (A) + 28.5 1 ml",
+      "ceilingPriceRs": 2.0
+    },
+    {
+      "dosageForm": "Dry Syrup 125 mg (A) + 31.25 1 ml",
+      "ceilingPriceRs": 2.4
+    },
+    {
+      "dosageForm": "Powder for Injection 500 mg Each Pack",
+      "ceilingPriceRs": 99.96
+    },
+    {
+      "dosageForm": "Powder for Injection 1 g (A) + Each Pack",
+      "ceilingPriceRs": 139.44
+    }
+  ],
+  "ampicillin": [
+    {
+      "dosageForm": "Powder for Injection 500 mg Each Pack",
+      "ceilingPriceRs": 14.6
+    },
+    {
+      "dosageForm": "Powder for Injection 1 g Each Pack",
+      "ceilingPriceRs": 23.69
+    }
+  ],
+  "benzathine": [
+    {
+      "dosageForm": "Powder for Injection 6 lac Each Pack",
+      "ceilingPriceRs": 13.39
+    },
+    {
+      "dosageForm": "Powder for Injection 12 lac Each Pack",
+      "ceilingPriceRs": 20.25
+    }
+  ],
+  "benzyl penicillin": [
+    {
+      "dosageForm": "Powder for Injection 10 lac Each Pack",
+      "ceilingPriceRs": 8.66
+    }
+  ],
+  "cefadroxil": [
+    {
+      "dosageForm": "Tablet 500 mg 1 Tablet",
+      "ceilingPriceRs": 4.47
+    },
+    {
+      "dosageForm": "Tablet 1 g 1 Tablet",
+      "ceilingPriceRs": 6.98
+    },
+    {
+      "dosageForm": "Oral liquid 125 mg/5 ml 1 ml",
+      "ceilingPriceRs": 0.7
+    },
+    {
+      "dosageForm": "Capsule 500 mg 1 Capsule",
+      "ceilingPriceRs": 7.94
+    }
+  ],
+  "cefazolin": [
+    {
+      "dosageForm": "Powder for Injection 500 mg Each Pack",
+      "ceilingPriceRs": 17.28
+    },
+    {
+      "dosageForm": "Powder for Injection 1 g Each Pack",
+      "ceilingPriceRs": 27.26
+    }
+  ],
+  "cefixime": [
+    {
+      "dosageForm": "Capsule 200 mg 1 Capsule",
+      "ceilingPriceRs": 16.03
+    },
+    {
+      "dosageForm": "Capsule 400 mg 1 Capsule",
+      "ceilingPriceRs": 32.47
+    },
+    {
+      "dosageForm": "Oral Liquid 100 mg/5ml 1 ml",
+      "ceilingPriceRs": 2.39
+    },
+    {
+      "dosageForm": "Oral Liquid 50 mg/5ml 1 ml",
+      "ceilingPriceRs": 1.62
+    },
+    {
+      "dosageForm": "Tablet 400 mg 1 Tablet",
+      "ceilingPriceRs": 24.5
+    },
+    {
+      "dosageForm": "Tablet 200mg 1 Tablet",
+      "ceilingPriceRs": 10.66
+    }
+  ],
+  "cefotaxime": [
+    {
+      "dosageForm": "Powder for Injection 250 mg Each Pack",
+      "ceilingPriceRs": 17.32
+    },
+    {
+      "dosageForm": "Powder for Injection 500 mg Each Pack",
+      "ceilingPriceRs": 22.78
+    },
+    {
+      "dosageForm": "Powder for Injection 1 g Each Pack",
+      "ceilingPriceRs": 38.1
+    }
+  ],
+  "ceftazidime": [
+    {
+      "dosageForm": "Powder for Injection 250 mg Each Pack",
+      "ceilingPriceRs": 72.27
+    },
+    {
+      "dosageForm": "Powder for Injection 1 g Each Pack",
+      "ceilingPriceRs": 232.39
+    }
+  ],
+  "ceftriaxone": [
+    {
+      "dosageForm": "Powder for Injection 250 mg Each Pack",
+      "ceilingPriceRs": 27.4
+    },
+    {
+      "dosageForm": "Powder for Injection 500 mg Each Pack",
+      "ceilingPriceRs": 50.06
+    },
+    {
+      "dosageForm": "Powder for Injection 1 g Each Pack",
+      "ceilingPriceRs": 59.86
+    },
+    {
+      "dosageForm": "Powder for Injection 2 g Each Pack",
+      "ceilingPriceRs": 142.29
+    }
+  ],
+  "cloxacillin": [
+    {
+      "dosageForm": "Capsule 250mg 1 Capsule",
+      "ceilingPriceRs": 1.26
+    },
+    {
+      "dosageForm": "Capsule 500mg 1 Capsule",
+      "ceilingPriceRs": 2.12
+    },
+    {
+      "dosageForm": "Tablet 250mg 1 Tablet",
+      "ceilingPriceRs": 1.92
+    },
+    {
+      "dosageForm": "Powder for Injection250mg Each Pack",
+      "ceilingPriceRs": 4.93
+    }
+  ],
+  "piperacillin (a) +": [
+    {
+      "dosageForm": "Powder for Injection 1 g (A) Each Pack",
+      "ceilingPriceRs": 98.15
+    },
+    {
+      "dosageForm": "Powder for Injection 2 g (A) Each Pack",
+      "ceilingPriceRs": 232.2
+    },
+    {
+      "dosageForm": "Powder for Injection 4 g (A) Each Pack",
+      "ceilingPriceRs": 487.76
+    }
+  ],
+  "azithromycin": [
+    {
+      "dosageForm": "Capsule 250 mg 1 Capsule",
+      "ceilingPriceRs": 11.66
+    },
+    {
+      "dosageForm": "Capsule 500 mg 1 Capsule",
+      "ceilingPriceRs": 18.41
+    },
+    {
+      "dosageForm": "Oral Liquid 200 mg/5ml 1 ml",
+      "ceilingPriceRs": 3.42
+    },
+    {
+      "dosageForm": "Tablet 250mg 1 Tablet",
+      "ceilingPriceRs": 11.72
+    },
+    {
+      "dosageForm": "Tablet 500mg 1 Tablet",
+      "ceilingPriceRs": 23.64
+    },
+    {
+      "dosageForm": "Powder for Injection 500mg Each Pack",
+      "ceilingPriceRs": 213.48
+    }
+  ],
+  "ciprofloxacin": [
+    {
+      "dosageForm": "Ointment 0.3% 1 gm",
+      "ceilingPriceRs": 1.26
+    },
+    {
+      "dosageForm": "Drops 0.30% 1 ml",
+      "ceilingPriceRs": 1.69
+    },
+    {
+      "dosageForm": "Injection 200 mg/100ml 1 ml",
+      "ceilingPriceRs": 0.19
+    },
+    {
+      "dosageForm": "Oral Liquid 250 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.7
+    },
+    {
+      "dosageForm": "Tablet 250mg 1 Tablet",
+      "ceilingPriceRs": 2.3
+    },
+    {
+      "dosageForm": "Tablet 500mg 1 Tablet",
+      "ceilingPriceRs": 4.05
+    },
+    {
+      "dosageForm": "Drops 0.3 % 1 ml",
+      "ceilingPriceRs": 1.69
+    },
+    {
+      "dosageForm": "Drops 0.3 % 1 ml",
+      "ceilingPriceRs": 1.69
+    },
+    {
+      "dosageForm": "Ointment 0.3% 1 gm",
+      "ceilingPriceRs": 1.26
+    }
+  ],
+  "clarithromycin": [
+    {
+      "dosageForm": "Tablet 250 mg 1 Tablet",
+      "ceilingPriceRs": 31.09
+    },
+    {
+      "dosageForm": "Tablet 500 mg 1 Tablet",
+      "ceilingPriceRs": 54.8
+    },
+    {
+      "dosageForm": "Oral liquid 125mg/5 ml 1 ml",
+      "ceilingPriceRs": 4.79
+    }
+  ],
+  "cotrimoxazole": [
+    {
+      "dosageForm": "Tablet 400 mg (A) + 80 mg (B) 1 Tablet",
+      "ceilingPriceRs": 0.86
+    },
+    {
+      "dosageForm": "Tablet 800 mg (A) + 160 mg 1 Tablet",
+      "ceilingPriceRs": 2.25
+    },
+    {
+      "dosageForm": "Oral liquid 200 mg (A) + 40 1 ml",
+      "ceilingPriceRs": 0.37
+    },
+    {
+      "dosageForm": "Tablet 400 mg (A) + 80 mg (B) 1 Tablet",
+      "ceilingPriceRs": 0.86
+    },
+    {
+      "dosageForm": "Tablet 800 mg (A) + 160 mg 1 Tablet",
+      "ceilingPriceRs": 2.25
+    },
+    {
+      "dosageForm": "Oral liquid 200 mg (A) + 40 1 ml",
+      "ceilingPriceRs": 0.37
+    }
+  ],
+  "doxycycline": [
+    {
+      "dosageForm": "Capsule 100 mg 1 Capsule",
+      "ceilingPriceRs": 2.78
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 1.09
+    }
+  ],
+  "gentamicin": [
+    {
+      "dosageForm": "Injection 10 mg/ml 1 ml",
+      "ceilingPriceRs": 3.53
+    },
+    {
+      "dosageForm": "Injection 40 mg/ml Each Pack (10",
+      "ceilingPriceRs": 19.95
+    },
+    {
+      "dosageForm": "Injection 40 mg/ml Each Pack (2 ml)",
+      "ceilingPriceRs": 9.35
+    },
+    {
+      "dosageForm": "Injection 40 mg/ml Each Pack (20",
+      "ceilingPriceRs": 30.24
+    },
+    {
+      "dosageForm": "Injection 40 mg/ml Each Pack (30",
+      "ceilingPriceRs": 33.1
+    },
+    {
+      "dosageForm": "Drops 0.3% 1 ml",
+      "ceilingPriceRs": 1.01
+    },
+    {
+      "dosageForm": "Drops 0.3% 1 ml",
+      "ceilingPriceRs": 1.01
+    }
+  ],
+  "metronidazole": [
+    {
+      "dosageForm": "Tablet 200 mg 1 Tablet",
+      "ceilingPriceRs": 0.76
+    },
+    {
+      "dosageForm": "Tablet 400 mg 1 Tablet",
+      "ceilingPriceRs": 1.42
+    },
+    {
+      "dosageForm": "Oral liquid 200 mg/5 ml 1 ml",
+      "ceilingPriceRs": 0.5
+    },
+    {
+      "dosageForm": "Injection 500 mg/100 ml 1 ml",
+      "ceilingPriceRs": 0.22
+    },
+    {
+      "dosageForm": "Injection 500mg/100ml 1 ml",
+      "ceilingPriceRs": 0.22
+    },
+    {
+      "dosageForm": "Oral Liquid 200 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.5
+    },
+    {
+      "dosageForm": "Tablet 200 mg 1 Tablet",
+      "ceilingPriceRs": 0.76
+    },
+    {
+      "dosageForm": "Tablet 400 mg 1 Tablet",
+      "ceilingPriceRs": 1.42
+    },
+    {
+      "dosageForm": "a) Amphotericin B Powder for Injection 50 mg Each Pack",
+      "ceilingPriceRs": 343.91
+    },
+    {
+      "dosageForm": "b) Lipid/ Liposomal Powder for Injection 50",
+      "ceilingPriceRs": 3558.99
+    },
+    {
+      "dosageForm": "Powder for Injection 50",
+      "ceilingPriceRs": 8290.0
+    }
+  ],
+  "nitrofurantoin": [
+    {
+      "dosageForm": "Oral Liquid 25 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.91
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 8.03
+    },
+    {
+      "dosageForm": "Capsule 100mg 1 Capsule",
+      "ceilingPriceRs": 8.72
+    }
+  ],
+  "vancomycin": [
+    {
+      "dosageForm": "Powder for Injection 1 gm Each Pack",
+      "ceilingPriceRs": 528.43
+    },
+    {
+      "dosageForm": "Powder for Injection 250 mg Each Pack",
+      "ceilingPriceRs": 246.21
+    },
+    {
+      "dosageForm": "Powder for Injection 500 mg Each Pack",
+      "ceilingPriceRs": 317.83
+    }
+  ],
+  "clofazimine": [
+    {
+      "dosageForm": "Capsule 50 mg 1 Capsule",
+      "ceilingPriceRs": 2.41
+    },
+    {
+      "dosageForm": "Capsule 100 mg 1 Capsule",
+      "ceilingPriceRs": 4.12
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 0.4
+    }
+  ],
+  "rifampicin": [
+    {
+      "dosageForm": "Capsule 150 mg 1 Capsule",
+      "ceilingPriceRs": 2.23
+    },
+    {
+      "dosageForm": "Capsule 300 mg 1 Capsule",
+      "ceilingPriceRs": 4.22
+    },
+    {
+      "dosageForm": "Capsule 450 mg 1 Capsule",
+      "ceilingPriceRs": 5.48
+    },
+    {
+      "dosageForm": "Capsule 600 mg 1 Capsule",
+      "ceilingPriceRs": 12.87
+    },
+    {
+      "dosageForm": "Oral Liquid 100 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.43
+    },
+    {
+      "dosageForm": "Tablet 150 mg 1 Tablet",
+      "ceilingPriceRs": 1.79
+    },
+    {
+      "dosageForm": "Tablet 300 mg 1 Tablet",
+      "ceilingPriceRs": 3.26
+    },
+    {
+      "dosageForm": "Capsule 150 mg 1 Capsule",
+      "ceilingPriceRs": 2.23
+    },
+    {
+      "dosageForm": "Capsule 300 mg 1 Capsule",
+      "ceilingPriceRs": 4.22
+    },
+    {
+      "dosageForm": "Capsule 450 mg 1 Capsule",
+      "ceilingPriceRs": 5.48
+    },
+    {
+      "dosageForm": "Capsule 600 mg 1 Capsule",
+      "ceilingPriceRs": 12.87
+    },
+    {
+      "dosageForm": "Oral Liquid 100 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.43
+    },
+    {
+      "dosageForm": "Tablet 150 mg 1 Tablet",
+      "ceilingPriceRs": 1.79
+    },
+    {
+      "dosageForm": "Tablet 300 mg 1 Tablet",
+      "ceilingPriceRs": 3.26
+    }
+  ],
+  "capreomycin": [
+    {
+      "dosageForm": "Powder for Injection 1 g Each Pack",
+      "ceilingPriceRs": 384.6
+    }
+  ],
+  "cycloserine": [
+    {
+      "dosageForm": "Capsule 250 mg 1 Capsule",
+      "ceilingPriceRs": 60.28
+    },
+    {
+      "dosageForm": "Tablet 250 mg 1 Tablet",
+      "ceilingPriceRs": 51.83
+    }
+  ],
+  "ethambutol": [
+    {
+      "dosageForm": "Tablet 200 mg 1 Tablet",
+      "ceilingPriceRs": 1.17
+    },
+    {
+      "dosageForm": "Tablet 400 mg 1 Tablet",
+      "ceilingPriceRs": 2.66
+    },
+    {
+      "dosageForm": "Tablet 600 mg 1 Tablet",
+      "ceilingPriceRs": 3.93
+    },
+    {
+      "dosageForm": "Tablet 800 mg 1 Tablet",
+      "ceilingPriceRs": 4.7
+    },
+    {
+      "dosageForm": "Tablet 250 mg 1 Tablet",
+      "ceilingPriceRs": 17.52
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 0.75
+    },
+    {
+      "dosageForm": "Tablet 300 mg 1 Tablet",
+      "ceilingPriceRs": 1.33
+    }
+  ],
+  "kanamycin": [
+    {
+      "dosageForm": "Powder for Injection 1 gm Each Pack",
+      "ceilingPriceRs": 43.42
+    },
+    {
+      "dosageForm": "Powder for Injection 500 mg Each Pack",
+      "ceilingPriceRs": 23.68
+    },
+    {
+      "dosageForm": "Powder for Injection 750 mg Each Pack",
+      "ceilingPriceRs": 40.46
+    }
+  ],
+  "levofloxacin": [
+    {
+      "dosageForm": "Tablet 250 mg 1 Tablet",
+      "ceilingPriceRs": 4.9
+    },
+    {
+      "dosageForm": "Tablet 750 mg 1 Tablet",
+      "ceilingPriceRs": 12.14
+    },
+    {
+      "dosageForm": "Tablet 500mg 1 Tablet",
+      "ceilingPriceRs": 8.95
+    }
+  ],
+  "linezolid": [
+    {
+      "dosageForm": "Tablet 600 mg 1 Tablet",
+      "ceilingPriceRs": 36.69
+    },
+    {
+      "dosageForm": "Tablet 400 mg 1 Tablet",
+      "ceilingPriceRs": 28.13
+    }
+  ],
+  "paraaminosalicylic acid": [
+    {
+      "dosageForm": "Tablet 500 mg Granules (As 1 gm",
+      "ceilingPriceRs": 3.16
+    }
+  ],
+  "pyrazinamide": [
+    {
+      "dosageForm": "Oral Liquid 250 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.68
+    },
+    {
+      "dosageForm": "Tablet 1000 mg 1 Tablet",
+      "ceilingPriceRs": 10.47
+    },
+    {
+      "dosageForm": "Tablet 1500 mg 1 Tablet",
+      "ceilingPriceRs": 11.6
+    },
+    {
+      "dosageForm": "Tablet 500 mg 1 Tablet",
+      "ceilingPriceRs": 4.7
+    },
+    {
+      "dosageForm": "Tablet 750 mg 1 Tablet",
+      "ceilingPriceRs": 7.14
+    }
+  ],
+  "rifabutin": [
+    {
+      "dosageForm": "Capsule 150mg 1 Capsule",
+      "ceilingPriceRs": 44.04
+    },
+    {
+      "dosageForm": "Tablet 150mg 1 Tablet",
+      "ceilingPriceRs": 41.13
+    }
+  ],
+  "streptomycin": [
+    {
+      "dosageForm": "Powder for Injection 750 mg Each Pack",
+      "ceilingPriceRs": 9.75
+    },
+    {
+      "dosageForm": "Powder for Injection 1 g Each Pack",
+      "ceilingPriceRs": 11.59
+    },
+    {
+      "dosageForm": "a) Amphotericin B Powder for Injection 50 mg Each Pack",
+      "ceilingPriceRs": 343.91
+    },
+    {
+      "dosageForm": "b) Lipid/ Liposomal Powder for Injection 50",
+      "ceilingPriceRs": 3558.99
+    },
+    {
+      "dosageForm": "Powder for Injection 50",
+      "ceilingPriceRs": 8290.0
+    }
+  ],
+  "clotrimazole": [
+    {
+      "dosageForm": "Pessary 100 mg 1 Pessary",
+      "ceilingPriceRs": 9.65
+    },
+    {
+      "dosageForm": "Lotion 1% 1 ml",
+      "ceilingPriceRs": 3.98
+    },
+    {
+      "dosageForm": "Cream 1% 1 gm",
+      "ceilingPriceRs": 3.23
+    },
+    {
+      "dosageForm": "Drops 1% 1 ml",
+      "ceilingPriceRs": 3.37
+    }
+  ],
+  "fluconazole": [
+    {
+      "dosageForm": "Capsule 100 mg 1 Capsule",
+      "ceilingPriceRs": 28.06
+    },
+    {
+      "dosageForm": "Capsule 150 mg 1 Capsule",
+      "ceilingPriceRs": 20.59
+    },
+    {
+      "dosageForm": "Capsule 200 mg 1 Capsule",
+      "ceilingPriceRs": 40.54
+    },
+    {
+      "dosageForm": "Oral Liquid 50mg/5ml 1 ml",
+      "ceilingPriceRs": 2.9
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 8.86
+    },
+    {
+      "dosageForm": "Tablet 150 mg 1 Tablet",
+      "ceilingPriceRs": 13.15
+    },
+    {
+      "dosageForm": "Tablet 200 mg 1 Tablet",
+      "ceilingPriceRs": 20.86
+    },
+    {
+      "dosageForm": "Tablet 400 mg 1 Tablet",
+      "ceilingPriceRs": 34.69
+    },
+    {
+      "dosageForm": "Injection 200 mg/100 ml Each Pack",
+      "ceilingPriceRs": 118.17
+    }
+  ],
+  "griseofulvin": [
+    {
+      "dosageForm": "Tablet 125 mg 1 Tablet",
+      "ceilingPriceRs": 0.91
+    },
+    {
+      "dosageForm": "Tablet 250 mg 1 Tablet",
+      "ceilingPriceRs": 1.77
+    },
+    {
+      "dosageForm": "Tablet 375 mg 1 Tablet",
+      "ceilingPriceRs": 4.77
+    }
+  ],
+  "acyclovir": [
+    {
+      "dosageForm": "Ointment 3% 1 gm",
+      "ceilingPriceRs": 11.56
+    },
+    {
+      "dosageForm": "Oral Liquid 400 mg/5ml 1 ml",
+      "ceilingPriceRs": 1.41
+    },
+    {
+      "dosageForm": "Tablet 200 mg 1 Tablet",
+      "ceilingPriceRs": 7.52
+    },
+    {
+      "dosageForm": "Tablet 400 mg 1 Tablet",
+      "ceilingPriceRs": 13.67
+    },
+    {
+      "dosageForm": "Powder for Injection 250 mg Each Pack",
+      "ceilingPriceRs": 394.52
+    },
+    {
+      "dosageForm": "Powder for Injection 500 mg Each Pack",
+      "ceilingPriceRs": 509.56
+    },
+    {
+      "dosageForm": "Ointment 3% 1 gm",
+      "ceilingPriceRs": 11.56
+    }
+  ],
+  "ganciclovir": [
+    {
+      "dosageForm": "Capsule 250 mg 1 Capsule",
+      "ceilingPriceRs": 133.48
+    },
+    {
+      "dosageForm": "Powder for Injection 500 mg Each Pack",
+      "ceilingPriceRs": 1873.81
+    },
+    {
+      "dosageForm": "Tablet 300 mg 1 Tablet",
+      "ceilingPriceRs": 52.36
+    }
+  ],
+  "abacavir (a) + lamivudine": [
+    {
+      "dosageForm": "Tablet 60 mg (A) +30 mg (B) 1 Tablet",
+      "ceilingPriceRs": 22.3
+    },
+    {
+      "dosageForm": "Tablet 600 mg (A)+ 300 mg 1 Tablet",
+      "ceilingPriceRs": 101.18
+    }
+  ],
+  "lamivudine (a) + dispersible": [
+    {
+      "dosageForm": "Tablet 30 mg (A) + 1 Tablet",
+      "ceilingPriceRs": 5.49
+    },
+    {
+      "dosageForm": "Tablet 150 mg (A) + 200 mg 1 Tablet",
+      "ceilingPriceRs": 17.32
+    },
+    {
+      "dosageForm": "Tablet 150 mg (A) + 300 mg 1 Tablet",
+      "ceilingPriceRs": 22.28
+    },
+    {
+      "dosageForm": "Tablet 30 mg (A) + 150 mg (B) 1 Tablet",
+      "ceilingPriceRs": 10.6
+    }
+  ],
+  "tenofovir (a) +": [
+    {
+      "dosageForm": "Tablet 300 mg (A) +300 mg 1 Tablet",
+      "ceilingPriceRs": 49.84
+    },
+    {
+      "dosageForm": "Tablet 300 mg (A) + 300 mg 1 Tablet",
+      "ceilingPriceRs": 114.44
+    }
+  ],
+  "zidovudine": [
+    {
+      "dosageForm": "Tablet 300 mg 1 Tablet",
+      "ceilingPriceRs": 15.83
+    },
+    {
+      "dosageForm": "Capsule 300 mg 1 Capsule",
+      "ceilingPriceRs": 2.29
+    },
+    {
+      "dosageForm": "Tablet 300 mg (A) + 150 mg 1 Tablet",
+      "ceilingPriceRs": 22.37
+    },
+    {
+      "dosageForm": "Capsule 200 mg 1 Capsule",
+      "ceilingPriceRs": 26.73
+    },
+    {
+      "dosageForm": "Capsule 600 mg 1 Capsule",
+      "ceilingPriceRs": 69.65
+    },
+    {
+      "dosageForm": "Tablet 200 mg 1 Tablet",
+      "ceilingPriceRs": 25.18
+    },
+    {
+      "dosageForm": "Tablet 600 mg 1 Tablet",
+      "ceilingPriceRs": 78.85
+    },
+    {
+      "dosageForm": "Tablet 200 mg 1 Tablet",
+      "ceilingPriceRs": 15.89
+    },
+    {
+      "dosageForm": "Oral liquid 50 mg/5 ml 1 ml",
+      "ceilingPriceRs": 0.93
+    }
+  ],
+  "raltegravir": [
+    {
+      "dosageForm": "Tablet 400 mg 1 Tablet",
+      "ceilingPriceRs": 173.77
+    }
+  ],
+  "atazanavir (a) + ritonavir": [
+    {
+      "dosageForm": "Tablet 300 mg (A) + 100 mg 1 Tablet",
+      "ceilingPriceRs": 109.61
+    }
+  ],
+  "darunavir": [
+    {
+      "dosageForm": "Tablet 600 mg 1 Tablet",
+      "ceilingPriceRs": 185.33
+    }
+  ],
+  "lopinavir (a) + ritonavir": [
+    {
+      "dosageForm": "Tablet 100 mg (A) + 25 mg (B) 1 Tablet",
+      "ceilingPriceRs": 26.11
+    },
+    {
+      "dosageForm": "Tablet 200 mg (A) + 50 mg (B) 1 Tablet",
+      "ceilingPriceRs": 50.59
+    }
+  ],
+  "ritonavir": [
+    {
+      "dosageForm": "Capsule 100 mg 1 Capsule",
+      "ceilingPriceRs": 31.34
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 32.23
+    }
+  ],
+  "entecavir": [
+    {
+      "dosageForm": "Tablet 0.5 mg 1 Tablet",
+      "ceilingPriceRs": 88.59
+    },
+    {
+      "dosageForm": "Tablet 1 mg 1 Tablet",
+      "ceilingPriceRs": 140.76
+    }
+  ],
+  "pegylated interferon alfa": [
+    {
+      "dosageForm": "Injection 180 mcg Each Pack",
+      "ceilingPriceRs": 8786.05
+    },
+    {
+      "dosageForm": "Pegylated interferon alfa Injection 100 mcg Each Pack",
+      "ceilingPriceRs": 17371.08
+    },
+    {
+      "dosageForm": "Injection 120 mcg Each Pack",
+      "ceilingPriceRs": 16177.38
+    },
+    {
+      "dosageForm": "Pegylated interferon Injection 80 mcg Each Pack",
+      "ceilingPriceRs": 13887.68
+    }
+  ],
+  "ribavirin": [
+    {
+      "dosageForm": "Capsule 200 mg 1 Capsule",
+      "ceilingPriceRs": 92.88
+    }
+  ],
+  "sofosbuvir": [
+    {
+      "dosageForm": "Tablet 400 mg 1 Tablet",
+      "ceilingPriceRs": 741.12
+    }
+  ],
+  "tenofovir": [
+    {
+      "dosageForm": "Tablet 300 mg 1 Tablet",
+      "ceilingPriceRs": 52.39
+    }
+  ],
+  "diloxanide furoate": [
+    {
+      "dosageForm": "Tablet 500 mg 1 Tablet",
+      "ceilingPriceRs": 1.17
+    }
+  ],
+  "artemether (a) +": [
+    {
+      "dosageForm": "Tablet 20 mg (A) + 120 mg (B) 1 Tablet",
+      "ceilingPriceRs": 13.9
+    },
+    {
+      "dosageForm": "Tablet 40 mg (A) + 240 mg (B) 1 Tablet",
+      "ceilingPriceRs": 17.92
+    },
+    {
+      "dosageForm": "Tablet 80 mg (A) + 480 mg (B) 1 Tablet",
+      "ceilingPriceRs": 25.72
+    },
+    {
+      "dosageForm": "Oral liquid 80 mg (A) + 480 1 ml",
+      "ceilingPriceRs": 4.47
+    }
+  ],
+  "artesunate": [
+    {
+      "dosageForm": "Powder for Injection 60 mg Each Pack",
+      "ceilingPriceRs": 242.69
+    },
+    {
+      "dosageForm": "Powder for Injection 120 mg Each Pack",
+      "ceilingPriceRs": 462.04
+    }
+  ],
+  "tablet 25 mg (a) + 1 combi pack": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 21.83
+    }
+  ],
+  "tablet 50 mg (a) + 1 combi pack": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 23.56
+    }
+  ],
+  "tablet 100 mg (a) + 1 combi pack": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 32.75
+    }
+  ],
+  "tablet 150 mg (a) + 2 combi pack": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 44.46
+    }
+  ],
+  "tablet 200 mg (a) + 2 combi pack": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 40.54
+    }
+  ],
+  "chloroquine": [
+    {
+      "dosageForm": "Tablet 150 mg 1 Tablet",
+      "ceilingPriceRs": 1.32
+    },
+    {
+      "dosageForm": "Oral liquid 50 mg/5 ml 1 ml",
+      "ceilingPriceRs": 0.33
+    }
+  ],
+  "clindamycin": [
+    {
+      "dosageForm": "Capsule 150 mg 1 Capsule",
+      "ceilingPriceRs": 16.07
+    },
+    {
+      "dosageForm": "Capsule 300 mg 1 Capsule",
+      "ceilingPriceRs": 26.24
+    },
+    {
+      "dosageForm": "Tablet 300 mg 1 Tablet",
+      "ceilingPriceRs": 16.93
+    }
+  ],
+  "primaquine": [
+    {
+      "dosageForm": "Tablet 15 mg 1 Tablet",
+      "ceilingPriceRs": 5.07
+    },
+    {
+      "dosageForm": "Tablet 2.5 mg 1 Tablet",
+      "ceilingPriceRs": 1.73
+    },
+    {
+      "dosageForm": "Tablet 7.5 mg 1 Tablet",
+      "ceilingPriceRs": 2.35
+    }
+  ],
+  "quinine": [
+    {
+      "dosageForm": "Tablet 300 mg 1 Tablet",
+      "ceilingPriceRs": 6.36
+    },
+    {
+      "dosageForm": "Injection 300 mg/ml 1 ml",
+      "ceilingPriceRs": 11.29
+    }
+  ],
+  "mefloquine": [
+    {
+      "dosageForm": "Tablet 250 mg 1 Tablet",
+      "ceilingPriceRs": 56.6
+    }
+  ],
+  "sumatriptan": [
+    {
+      "dosageForm": "Tablet 25mg 1 Tablet",
+      "ceilingPriceRs": 36.96
+    },
+    {
+      "dosageForm": "Tablet 50mg 1 Tablet",
+      "ceilingPriceRs": 57.22
+    }
+  ],
+  "flunarizine": [
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 3.06
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 5.26
+    }
+  ],
+  "propranolol": [
+    {
+      "dosageForm": "Capsule 40 mg 1 Capsule",
+      "ceilingPriceRs": 4.22
+    },
+    {
+      "dosageForm": "Capsule 80 mg 1 Capsule",
+      "ceilingPriceRs": 6.41
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 1.3
+    },
+    {
+      "dosageForm": "Tablet 40 mg 1 Tablet",
+      "ceilingPriceRs": 3.06
+    },
+    {
+      "dosageForm": "Tablet 80 mg 1 Tablet",
+      "ceilingPriceRs": 5.55
+    }
+  ],
+  "5fluorouracil": [
+    {
+      "dosageForm": "Injection 250 mg/5 ml 1 ml",
+      "ceilingPriceRs": 2.59
+    }
+  ],
+  "6mercaptopurine": [
+    {
+      "dosageForm": "Tablet 50mg 1 Tablet",
+      "ceilingPriceRs": 7.17
+    }
+  ],
+  "actinomycin d": [
+    {
+      "dosageForm": "Powder for Injection 0.5 mg Each Pack",
+      "ceilingPriceRs": 352.13
+    }
+  ],
+  "alltrans retinoic acid": [
+    {
+      "dosageForm": "Capsule 10 mg 1 Capsule",
+      "ceilingPriceRs": 90.83
+    }
+  ],
+  "arsenic trioxide": [
+    {
+      "dosageForm": "Injection 1mg/ml 1 ml",
+      "ceilingPriceRs": 60.29
+    }
+  ],
+  "bleomycin": [
+    {
+      "dosageForm": "Powder for Injection 15 units Each Pack",
+      "ceilingPriceRs": 689.25
+    }
+  ],
+  "bortezomib": [
+    {
+      "dosageForm": "Powder for Injection 2mg Each Pack",
+      "ceilingPriceRs": 13656.22
+    }
+  ],
+  "calcium folinate": [
+    {
+      "dosageForm": "Tablet 15 mg 1 Tablet",
+      "ceilingPriceRs": 45.29
+    }
+  ],
+  "capecitabine": [
+    {
+      "dosageForm": "Tablet 500 mg 1 Tablet",
+      "ceilingPriceRs": 140.33
+    }
+  ],
+  "carboplatin": [
+    {
+      "dosageForm": "Injection 10 mg/ml 1 ml",
+      "ceilingPriceRs": 59.08
+    }
+  ],
+  "chlorambucil": [
+    {
+      "dosageForm": "Tablet 2 mg 1 Tablet",
+      "ceilingPriceRs": 40.98
+    },
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 92.09
+    }
+  ],
+  "cisplatin": [
+    {
+      "dosageForm": "Injection 1mg/ml 1 ml",
+      "ceilingPriceRs": 7.65
+    }
+  ],
+  "cyclophosphamide": [
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 4.5
+    },
+    {
+      "dosageForm": "Powder for Injection 500 mg Each Pack",
+      "ceilingPriceRs": 88.62
+    }
+  ],
+  "cytosine arabinoside": [
+    {
+      "dosageForm": "Injection 100 mg/ml Each Pack",
+      "ceilingPriceRs": 220.59
+    },
+    {
+      "dosageForm": "Powder for Injection 1000 mg Each Pack",
+      "ceilingPriceRs": 1189.78
+    },
+    {
+      "dosageForm": "Powder for Injection 500 mg Each Pack",
+      "ceilingPriceRs": 568.66
+    }
+  ],
+  "dacarbazine": [
+    {
+      "dosageForm": "Powder for Injection 200 mg Each Pack",
+      "ceilingPriceRs": 487.79
+    },
+    {
+      "dosageForm": "Powder for Injection 500 mg Each Pack",
+      "ceilingPriceRs": 1100.41
+    },
+    {
+      "dosageForm": "Powder for I.V. Injection 20 mg Each pack",
+      "ceilingPriceRs": 270.01
+    }
+  ],
+  "docetaxel": [
+    {
+      "dosageForm": "Powder for Injection 20 mg Each Pack",
+      "ceilingPriceRs": 3323.65
+    },
+    {
+      "dosageForm": "Powder for Injection 80 mg Each Pack",
+      "ceilingPriceRs": 12636.74
+    }
+  ],
+  "doxorubicin": [
+    {
+      "dosageForm": "Injection 2 mg/ml 1 ml",
+      "ceilingPriceRs": 39.86
+    }
+  ],
+  "etoposide": [
+    {
+      "dosageForm": "Capsule 50 mg 1 Capsule",
+      "ceilingPriceRs": 60.37
+    },
+    {
+      "dosageForm": "Injection 20 mg/ml 1 ml",
+      "ceilingPriceRs": 39.81
+    }
+  ],
+  "gefitinib": [
+    {
+      "dosageForm": "Tablet 250 mg 1 Tablet",
+      "ceilingPriceRs": 475.9
+    }
+  ],
+  "gemcitabine": [
+    {
+      "dosageForm": "Powder for Injection 1 gm Each Pack",
+      "ceilingPriceRs": 5890.65
+    },
+    {
+      "dosageForm": "Powder for Injection 200mg Each Pack",
+      "ceilingPriceRs": 1300.95
+    }
+  ],
+  "ifosfamide": [
+    {
+      "dosageForm": "Powder for Injection 1g Each Pack",
+      "ceilingPriceRs": 401.77
+    },
+    {
+      "dosageForm": "Powder for Injection 2g Each Pack",
+      "ceilingPriceRs": 1054.59
+    }
+  ],
+  "imatinib": [
+    {
+      "dosageForm": "Capsule 100 mg 1 Capsule",
+      "ceilingPriceRs": 86.2
+    },
+    {
+      "dosageForm": "Capsule 400 mg 1 Capsule",
+      "ceilingPriceRs": 283.61
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 88.18
+    },
+    {
+      "dosageForm": "Tablet 400 mg 1 Tablet",
+      "ceilingPriceRs": 255.28
+    }
+  ],
+  "lasparaginase": [
+    {
+      "dosageForm": "Powder for Injection 10000 Each Pack",
+      "ceilingPriceRs": 1782.47
+    },
+    {
+      "dosageForm": "Powder for Injection 5000KU Each Pack",
+      "ceilingPriceRs": 1150.56
+    }
+  ],
+  "melphalan": [
+    {
+      "dosageForm": "Tablet 2 mg 1 Tablet",
+      "ceilingPriceRs": 108.93
+    },
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 186.83
+    }
+  ],
+  "mesna": [
+    {
+      "dosageForm": "Injection 100 mg/ml 1 ml",
+      "ceilingPriceRs": 18.62
+    }
+  ],
+  "oxaliplatin": [
+    {
+      "dosageForm": "Injection 100mg(as licensed) Each Pack",
+      "ceilingPriceRs": 4962.1
+    },
+    {
+      "dosageForm": "Injection 50mg(as licensed) Each Pack",
+      "ceilingPriceRs": 2885.84
+    }
+  ],
+  "paclitaxel": [
+    {
+      "dosageForm": "Injection 100 mg/16.7 ml 1 ml",
+      "ceilingPriceRs": 228.33
+    },
+    {
+      "dosageForm": "Injection 30 mg/ 5ml 1 ml",
+      "ceilingPriceRs": 228.33
+    }
+  ],
+  "procarbazine": [
+    {
+      "dosageForm": "Capsule 50 mg 1 Capsule",
+      "ceilingPriceRs": 38.38
+    },
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 52.3
+    }
+  ],
+  "rituximab": [
+    {
+      "dosageForm": "Injection 10 mg/ml 1 ml",
+      "ceilingPriceRs": 842.18
+    }
+  ],
+  "temozolomide": [
+    {
+      "dosageForm": "Capsule 100 mg 1 Capsule",
+      "ceilingPriceRs": 2313.54
+    },
+    {
+      "dosageForm": "Capsule 20 mg 1 Capsule",
+      "ceilingPriceRs": 662.24
+    },
+    {
+      "dosageForm": "Capsule 250 mg 1 Capsule",
+      "ceilingPriceRs": 5203.58
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 1717.31
+    },
+    {
+      "dosageForm": "Tablet 20 mg 1 Tablet",
+      "ceilingPriceRs": 416.06
+    },
+    {
+      "dosageForm": "Tablet 250 mg 1 Tablet",
+      "ceilingPriceRs": 4250.5
+    }
+  ],
+  "thalidomide": [
+    {
+      "dosageForm": "Capsule 100 mg 1 Capsule",
+      "ceilingPriceRs": 67.84
+    },
+    {
+      "dosageForm": "Capsule 50 mg 1 Capsule",
+      "ceilingPriceRs": 39.19
+    }
+  ],
+  "trastuzumab": [
+    {
+      "dosageForm": "Injection 440 mg/50 ml Each Pack",
+      "ceilingPriceRs": 66790.46
+    }
+  ],
+  "vinblastine": [
+    {
+      "dosageForm": "Injection 1 mg/ml 1 ml",
+      "ceilingPriceRs": 22.78
+    }
+  ],
+  "vincristine": [
+    {
+      "dosageForm": "Injection 1 mg/ml 1 ml",
+      "ceilingPriceRs": 57.86
+    }
+  ],
+  "bicalutamide": [
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 76.18
+    }
+  ],
+  "letrozole": [
+    {
+      "dosageForm": "Tablet 2.5 mg 1 Tablet",
+      "ceilingPriceRs": 45.27
+    }
+  ],
+  "tamoxifen": [
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 2.86
+    },
+    {
+      "dosageForm": "Tablet 20 mg 1 Tablet",
+      "ceilingPriceRs": 3.23
+    }
+  ],
+  "mycophenolate mofetil": [
+    {
+      "dosageForm": "Tablet 250 mg 1 Tablet",
+      "ceilingPriceRs": 46.1
+    },
+    {
+      "dosageForm": "Tablet 500 mg 1 Tablet",
+      "ceilingPriceRs": 91.19
+    }
+  ],
+  "tacrolimus": [
+    {
+      "dosageForm": "Capsule 0.5 mg 1 Capsule",
+      "ceilingPriceRs": 24.56
+    },
+    {
+      "dosageForm": "Capsule 1 mg 1 Capsule",
+      "ceilingPriceRs": 43.38
+    },
+    {
+      "dosageForm": "Capsule 2 mg 1 Capsule",
+      "ceilingPriceRs": 84.97
+    },
+    {
+      "dosageForm": "Tablet 0.5 mg 1 Tablet",
+      "ceilingPriceRs": 20.8
+    },
+    {
+      "dosageForm": "Tablet 1 mg 1 Tablet",
+      "ceilingPriceRs": 38.2
+    },
+    {
+      "dosageForm": "Tablet 2 mg 1 Tablet",
+      "ceilingPriceRs": 75.46
+    }
+  ],
+  "amitriptyline": [
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 2.54
+    },
+    {
+      "dosageForm": "Tablet 25 mg 1 Tablet",
+      "ceilingPriceRs": 2.5
+    },
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 6.45
+    },
+    {
+      "dosageForm": "Tablet 75 mg 1 Tablet",
+      "ceilingPriceRs": 6.23
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 2.54
+    },
+    {
+      "dosageForm": "Tablet 25 mg 1 Tablet",
+      "ceilingPriceRs": 2.5
+    },
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 6.45
+    },
+    {
+      "dosageForm": "Tablet 75 mg 1 Tablet",
+      "ceilingPriceRs": 6.23
+    }
+  ],
+  "filgrastim": [
+    {
+      "dosageForm": "Injection 300 mcg Each pack",
+      "ceilingPriceRs": 1523.73
+    }
+  ],
+  "fluoxetine": [
+    {
+      "dosageForm": "Capsule 10 mg 1 Capsule",
+      "ceilingPriceRs": 3.3
+    },
+    {
+      "dosageForm": "Capsule 20 mg 1 Capsule",
+      "ceilingPriceRs": 4.05
+    },
+    {
+      "dosageForm": "Capsule 40 mg 1 Capsule",
+      "ceilingPriceRs": 6.15
+    },
+    {
+      "dosageForm": "Capsule 60 mg 1 Capsule",
+      "ceilingPriceRs": 10.87
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 2.77
+    },
+    {
+      "dosageForm": "Tablet 20 mg 1 Tablet",
+      "ceilingPriceRs": 4.4
+    },
+    {
+      "dosageForm": "Tablet 40 mg 1 Tablet",
+      "ceilingPriceRs": 5.93
+    },
+    {
+      "dosageForm": "Tablet 60 mg 1 Tablet",
+      "ceilingPriceRs": 8.22
+    },
+    {
+      "dosageForm": "Capsule 10 mg 1 Capsule",
+      "ceilingPriceRs": 3.3
+    },
+    {
+      "dosageForm": "Capsule 20 mg 1 Capsule",
+      "ceilingPriceRs": 4.05
+    },
+    {
+      "dosageForm": "Capsule 40 mg 1 Capsule",
+      "ceilingPriceRs": 6.15
+    },
+    {
+      "dosageForm": "Capsule 60 mg 1 Capsule",
+      "ceilingPriceRs": 10.87
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 2.77
+    },
+    {
+      "dosageForm": "Tablet 20 mg 1 Tablet",
+      "ceilingPriceRs": 4.4
+    },
+    {
+      "dosageForm": "Tablet 40 mg 1 Tablet",
+      "ceilingPriceRs": 5.93
+    },
+    {
+      "dosageForm": "Tablet 60 mg 1 Tablet",
+      "ceilingPriceRs": 8.22
+    },
+    {
+      "dosageForm": "Capsule 10 mg 1 Capsule",
+      "ceilingPriceRs": 3.3
+    },
+    {
+      "dosageForm": "Capsule 20 mg 1 Capsule",
+      "ceilingPriceRs": 4.05
+    },
+    {
+      "dosageForm": "Capsule 40 mg 1 Capsule",
+      "ceilingPriceRs": 6.15
+    },
+    {
+      "dosageForm": "Capsule 60 mg 1 Capsule",
+      "ceilingPriceRs": 10.87
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 2.77
+    },
+    {
+      "dosageForm": "Tablet 20 mg 1 Tablet",
+      "ceilingPriceRs": 4.4
+    },
+    {
+      "dosageForm": "Tablet 40 mg 1 Tablet",
+      "ceilingPriceRs": 5.93
+    },
+    {
+      "dosageForm": "Tablet 60 mg 1 Tablet",
+      "ceilingPriceRs": 8.22
+    }
+  ],
+  "haloperidol": [
+    {
+      "dosageForm": "Injection 5 mg/ml 1 ml",
+      "ceilingPriceRs": 6.47
+    },
+    {
+      "dosageForm": "Oral Liquid 2 mg/ 5ml 1 ml",
+      "ceilingPriceRs": 2.28
+    },
+    {
+      "dosageForm": "Tablet 1.5 mg 1 Tablet",
+      "ceilingPriceRs": 1.84
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 4.9
+    },
+    {
+      "dosageForm": "Tablet 20 mg 1 Tablet",
+      "ceilingPriceRs": 5.47
+    },
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 3.82
+    },
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 3.82
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 4.9
+    },
+    {
+      "dosageForm": "Tablet 20 mg 1 Tablet",
+      "ceilingPriceRs": 5.47
+    },
+    {
+      "dosageForm": "Oral liquid 2 mg/ 5ml 1 ml",
+      "ceilingPriceRs": 2.28
+    }
+  ],
+  "lactulose": [
+    {
+      "dosageForm": "Oral liquid 10 g/15 ml 1 ml",
+      "ceilingPriceRs": 1.22
+    },
+    {
+      "dosageForm": "Oral liquid 10 g/15 ml 1 ml",
+      "ceilingPriceRs": 1.22
+    }
+  ],
+  "loperamide": [
+    {
+      "dosageForm": "Capsule 2 mg 1 Capsule",
+      "ceilingPriceRs": 3.98
+    },
+    {
+      "dosageForm": "Tablet 2 mg 1 Tablet",
+      "ceilingPriceRs": 2.19
+    }
+  ],
+  "metoclopramide": [
+    {
+      "dosageForm": "Injection 5 mg/ml (10 ml 1 ml",
+      "ceilingPriceRs": 1.58
+    },
+    {
+      "dosageForm": "Injection 5 mg/ml (2 ml Pack) 1 ml",
+      "ceilingPriceRs": 2.59
+    },
+    {
+      "dosageForm": "Oral Liquid 5 mg/5ml 1 ml",
+      "ceilingPriceRs": 0.49
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 1.3
+    }
+  ],
+  "ondansetron": [
+    {
+      "dosageForm": "Injection 2 mg/ml 1 ml",
+      "ceilingPriceRs": 6.49
+    },
+    {
+      "dosageForm": "Oral Liquid 2 mg/5ml 1 ml",
+      "ceilingPriceRs": 1.26
+    },
+    {
+      "dosageForm": "Tablet 4 mg 1 Tablet",
+      "ceilingPriceRs": 5.23
+    },
+    {
+      "dosageForm": "Tablet 8 mg 1 Tablet",
+      "ceilingPriceRs": 10.83
+    },
+    {
+      "dosageForm": "Oral liquid 2 mg/5 ml 1 ml",
+      "ceilingPriceRs": 1.26
+    },
+    {
+      "dosageForm": "Injection 2 mg/ml 1 ml",
+      "ceilingPriceRs": 6.49
+    }
+  ],
+  "zoledronic acid": [
+    {
+      "dosageForm": "Powder for Injection 4 mg Each Pack",
+      "ceilingPriceRs": 4664.74
+    }
+  ],
+  "levodopa (a) + carbidopa": [
+    {
+      "dosageForm": "CR Tablet 100 mg(A) + 25 1 Tablet",
+      "ceilingPriceRs": 3.7
+    },
+    {
+      "dosageForm": "Tablet 100 mg(A) + 10 mg(B) 1 Tablet",
+      "ceilingPriceRs": 1.73
+    },
+    {
+      "dosageForm": "Tablet 100 mg(A) + 25 mg(B) 1 Tablet",
+      "ceilingPriceRs": 2.5
+    },
+    {
+      "dosageForm": "Tablet 250 mg(A) + 25 mg(B) 1 Tablet",
+      "ceilingPriceRs": 4.15
+    },
+    {
+      "dosageForm": "CR Tablet 200 mg(A) + 50 1 Tablet",
+      "ceilingPriceRs": 4.56
+    }
+  ],
+  "trihexyphenidyl": [
+    {
+      "dosageForm": "Tablet 2 mg 1 Tablet",
+      "ceilingPriceRs": 1.35
+    }
+  ],
+  "erythropoietin": [
+    {
+      "dosageForm": "Injection 10000 IU/ml Each pack",
+      "ceilingPriceRs": 2888.54
+    },
+    {
+      "dosageForm": "Injection 2000 IU/ml Each pack",
+      "ceilingPriceRs": 684.16
+    },
+    {
+      "dosageForm": "Tablet 100 mg elemental iron 1 Tablet",
+      "ceilingPriceRs": 0.25
+    }
+  ],
+  "folic acid": [
+    {
+      "dosageForm": "Capsule 5 mg 1 Capsule",
+      "ceilingPriceRs": 6.26
+    },
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 1.55
+    }
+  ],
+  "hydroxocobalamin": [
+    {
+      "dosageForm": "Injection 1 mg/ml 1 ML",
+      "ceilingPriceRs": 10.98
+    }
+  ],
+  "hydroxyurea": [
+    {
+      "dosageForm": "Capsule 500 mg 1 Capsule",
+      "ceilingPriceRs": 14.23
+    }
+  ],
+  "iron sucrose": [
+    {
+      "dosageForm": "Injection 20 mg/ml 1 ml",
+      "ceilingPriceRs": 59.68
+    }
+  ],
+  "enoxaparin": [
+    {
+      "dosageForm": "Injection 40 mg/0.4ml 0.1 ml",
+      "ceilingPriceRs": 112.86
+    },
+    {
+      "dosageForm": "Injection 60 mg/0.6ml 0.1 ml",
+      "ceilingPriceRs": 112.86
+    }
+  ],
+  "heparin": [
+    {
+      "dosageForm": "Injection 1000 IU/ml 1 ml",
+      "ceilingPriceRs": 18.11
+    },
+    {
+      "dosageForm": "Injection 5000 IU/ml 1 ml",
+      "ceilingPriceRs": 44.95
+    },
+    {
+      "dosageForm": "Injection 1000 IU/ml 1 ml",
+      "ceilingPriceRs": 18.11
+    },
+    {
+      "dosageForm": "Injection 5000 IU/ml 1 ml",
+      "ceilingPriceRs": 44.95
+    }
+  ],
+  "phytomenadione (vitamin": [
+    {
+      "dosageForm": "Tablet 10mg 1 Tablet",
+      "ceilingPriceRs": 16.13
+    },
+    {
+      "dosageForm": "Injection 10 mg/ml 1 ml",
+      "ceilingPriceRs": 53.17
+    }
+  ],
+  "protamine": [
+    {
+      "dosageForm": "Injection 10 mg/ml 1 ml",
+      "ceilingPriceRs": 10.27
+    }
+  ],
+  "tranexamic acid": [
+    {
+      "dosageForm": "Injection 100 mg/ml 1 ml",
+      "ceilingPriceRs": 16.59
+    },
+    {
+      "dosageForm": "Tablet 500 mg 1 Tablet",
+      "ceilingPriceRs": 19.28
+    }
+  ],
+  "warfarin": [
+    {
+      "dosageForm": "Tablet 1 mg 1 Tablet",
+      "ceilingPriceRs": 2.68
+    },
+    {
+      "dosageForm": "Tablet 2 mg 1 Tablet",
+      "ceilingPriceRs": 2.96
+    },
+    {
+      "dosageForm": "Tablet 3 mg 1 Tablet",
+      "ceilingPriceRs": 3.47
+    },
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 2.61
+    }
+  ],
+  "dextran40": [
+    {
+      "dosageForm": "Injection 10% 1 ml",
+      "ceilingPriceRs": 0.94
+    }
+  ],
+  "coagulation factor ix": [
+    {
+      "dosageForm": "Powder for Injection 600 IU Each Pack",
+      "ceilingPriceRs": 13680.58
+    }
+  ],
+  "coagulation factor viii": [
+    {
+      "dosageForm": "Powder for Injection 250 IU Each pack",
+      "ceilingPriceRs": 4147.18
+    },
+    {
+      "dosageForm": "Powder for Injection 500 IU Each Pack",
+      "ceilingPriceRs": 10176.88
+    }
+  ],
+  "acetylsalicylic acid effervescent dispersible 1": [
+    {
+      "dosageForm": "Tablet",
+      "ceilingPriceRs": 0.2
+    },
+    {
+      "dosageForm": "Effervescent/ Dispersible/ 1 Tablet",
+      "ceilingPriceRs": 1.34
+    },
+    {
+      "dosageForm": "Effervescent/ 1 Tablet",
+      "ceilingPriceRs": 1.36
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 0.19
+    },
+    {
+      "dosageForm": "Tablet 150 mg 1 Tablet",
+      "ceilingPriceRs": 0.45
+    },
+    {
+      "dosageForm": "Tablet 325mg 1 Tablet",
+      "ceilingPriceRs": 0.61
+    },
+    {
+      "dosageForm": "Tablet 350mg 1 Tablet",
+      "ceilingPriceRs": 0.34
+    },
+    {
+      "dosageForm": "Tablet 75 mg 1 Tablet",
+      "ceilingPriceRs": 0.34
+    }
+  ],
+  "clopidogrel": [
+    {
+      "dosageForm": "Tablet 75 mg 1 Tablet",
+      "ceilingPriceRs": 7.72
+    }
+  ],
+  "diltiazem": [
+    {
+      "dosageForm": "Capsule 90 mg 1 Capsule",
+      "ceilingPriceRs": 10.67
+    },
+    {
+      "dosageForm": "Injection 5 mg/ml 1 ml",
+      "ceilingPriceRs": 3.51
+    },
+    {
+      "dosageForm": "SR Tablet 90 mg 1 Tablet",
+      "ceilingPriceRs": 10.36
+    },
+    {
+      "dosageForm": "Tablet 30 mg 1 Tablet",
+      "ceilingPriceRs": 2.66
+    },
+    {
+      "dosageForm": "Tablet 60 mg 1 Tablet",
+      "ceilingPriceRs": 5.43
+    }
+  ],
+  "glyceryl trinitrate sublingual tablet 05 mg 1": [
+    {
+      "dosageForm": "Tablet",
+      "ceilingPriceRs": 2.0
+    },
+    {
+      "dosageForm": "Injection 5 mg/ml 1 ml",
+      "ceilingPriceRs": 7.29
+    }
+  ],
+  "isosorbide5mononitrate": [
+    {
+      "dosageForm": "SR Capsule 30 mg 1 Capsule",
+      "ceilingPriceRs": 3.89
+    },
+    {
+      "dosageForm": "SR Capsule 60 mg 1 Capsule",
+      "ceilingPriceRs": 3.87
+    },
+    {
+      "dosageForm": "SR Tablet 30 mg 1 Tablet",
+      "ceilingPriceRs": 5.44
+    },
+    {
+      "dosageForm": "SR Tablet 60 mg 1 Tablet",
+      "ceilingPriceRs": 7.09
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 2.18
+    },
+    {
+      "dosageForm": "Tablet 20 mg 1 Tablet",
+      "ceilingPriceRs": 3.64
+    }
+  ],
+  "isosorbide dinitrate": [
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 0.81
+    },
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 0.83
+    }
+  ],
+  "metoprolol": [
+    {
+      "dosageForm": "Capsule 25 mg 1 Capsule",
+      "ceilingPriceRs": 4.7
+    },
+    {
+      "dosageForm": "Capsule 50 mg 1 Capsule",
+      "ceilingPriceRs": 7.16
+    },
+    {
+      "dosageForm": "SR Tablet 25 mg 1 Tablet",
+      "ceilingPriceRs": 4.47
+    },
+    {
+      "dosageForm": "SR Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 6.41
+    },
+    {
+      "dosageForm": "Tablet 25 mg 1 Tablet",
+      "ceilingPriceRs": 3.46
+    },
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 5.24
+    }
+  ],
+  "adenosine": [
+    {
+      "dosageForm": "Injection 3 mg/ml 1 ml",
+      "ceilingPriceRs": 109.33
+    }
+  ],
+  "amiodarone": [
+    {
+      "dosageForm": "Injection 50 mg/ml 1 ml",
+      "ceilingPriceRs": 24.77
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 6.35
+    },
+    {
+      "dosageForm": "Tablet 200 mg 1 Tablet",
+      "ceilingPriceRs": 12.57
+    }
+  ],
+  "esmolol": [
+    {
+      "dosageForm": "Injection 10 mg/ml 1 ml",
+      "ceilingPriceRs": 24.06
+    }
+  ],
+  "verapamil": [
+    {
+      "dosageForm": "Injection 2.5 mg/ml 1 ml",
+      "ceilingPriceRs": 1.3
+    },
+    {
+      "dosageForm": "Tablet 40 mg 1 Tablet",
+      "ceilingPriceRs": 0.82
+    },
+    {
+      "dosageForm": "Tablet 80 mg 1 Tablet",
+      "ceilingPriceRs": 1.55
+    }
+  ],
+  "amlodipine": [
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 5.63
+    },
+    {
+      "dosageForm": "Tablet 2.5 mg 1 Tablet",
+      "ceilingPriceRs": 1.84
+    },
+    {
+      "dosageForm": "Tablet 5mg 1 Tablet",
+      "ceilingPriceRs": 2.89
+    }
+  ],
+  "atenolol": [
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 3.87
+    },
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 1.98
+    }
+  ],
+  "enalapril": [
+    {
+      "dosageForm": "Tablet 2.5 mg 1 Tablet",
+      "ceilingPriceRs": 2.15
+    },
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 3.57
+    }
+  ],
+  "hydrochlorothiazide": [
+    {
+      "dosageForm": "Tablet 12.5 mg 1 Tablet",
+      "ceilingPriceRs": 1.1
+    },
+    {
+      "dosageForm": "Tablet 25 mg 1 Tablet",
+      "ceilingPriceRs": 1.87
+    },
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 0.09
+    },
+    {
+      "dosageForm": "Tablet 25 mg 1 Tablet",
+      "ceilingPriceRs": 1.87
+    },
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 0.09
+    },
+    {
+      "dosageForm": "Tablet 12.5 mg 1 Tablet",
+      "ceilingPriceRs": 1.1
+    }
+  ],
+  "labetalol": [
+    {
+      "dosageForm": "Injection 5 mg/ml 1 ml",
+      "ceilingPriceRs": 56.28
+    }
+  ],
+  "methyldopa": [
+    {
+      "dosageForm": "Tablet 250 mg 1 Tablet",
+      "ceilingPriceRs": 2.71
+    },
+    {
+      "dosageForm": "Tablet 500 mg 1 Tablet",
+      "ceilingPriceRs": 5.21
+    }
+  ],
+  "ramipril": [
+    {
+      "dosageForm": "Capsule 2.5 mg 1 Capsule",
+      "ceilingPriceRs": 5.26
+    },
+    {
+      "dosageForm": "Capsule 5 mg 1 Capsule",
+      "ceilingPriceRs": 8.21
+    },
+    {
+      "dosageForm": "Tablet 2.5 mg 1 Tablet",
+      "ceilingPriceRs": 5.53
+    },
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 8.7
+    }
+  ],
+  "sodium nitroprusside": [
+    {
+      "dosageForm": "Injection 10 mg/ml 1 ml",
+      "ceilingPriceRs": 28.67
+    }
+  ],
+  "telmisartan": [
+    {
+      "dosageForm": "Tablet 20 mg 1 Tablet",
+      "ceilingPriceRs": 4.05
+    },
+    {
+      "dosageForm": "Tablet 40 mg 1 Tablet",
+      "ceilingPriceRs": 7.32
+    },
+    {
+      "dosageForm": "Tablet 80 mg 1 Tablet",
+      "ceilingPriceRs": 11.15
+    }
+  ],
+  "digoxin": [
+    {
+      "dosageForm": "Injection 0.25 mg/ml 1 ml",
+      "ceilingPriceRs": 3.7
+    },
+    {
+      "dosageForm": "Oral liquid 0.05 mg/ml 1 ml",
+      "ceilingPriceRs": 1.41
+    },
+    {
+      "dosageForm": "Tablet 0.25 mg 1 Tablet",
+      "ceilingPriceRs": 1.33
+    }
+  ],
+  "dobutamine": [
+    {
+      "dosageForm": "Injection 50 mg/ml Each Pack",
+      "ceilingPriceRs": 41.64
+    }
+  ],
+  "dopamine": [
+    {
+      "dosageForm": "Injection 40 mg/ml 1 ml",
+      "ceilingPriceRs": 6.27
+    }
+  ],
+  "noradrenaline": [
+    {
+      "dosageForm": "Injection 2 mg/ml 1 ml",
+      "ceilingPriceRs": 28.61
+    }
+  ],
+  "acetylsalicylic acid": [
+    {
+      "dosageForm": "Tablet 75 mg 1 Tablet",
+      "ceilingPriceRs": 0.34
+    },
+    {
+      "dosageForm": "Effervescent/ Dispersible/ 1 Tablet",
+      "ceilingPriceRs": 1.36
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 0.19
+    },
+    {
+      "dosageForm": "Effervescent/ Dispersible/ 1 Tablet",
+      "ceilingPriceRs": 0.2
+    },
+    {
+      "dosageForm": "Tablet 150 mg 1 Tablet",
+      "ceilingPriceRs": 0.45
+    },
+    {
+      "dosageForm": "Effervescent/ Dispersible/ 1 Tablet",
+      "ceilingPriceRs": 1.34
+    }
+  ],
+  "alteplase": [
+    {
+      "dosageForm": "Powder for Injection 20 mg Each Pack",
+      "ceilingPriceRs": 21089.89
+    },
+    {
+      "dosageForm": "Powder for Injection 50 mg Each Pack",
+      "ceilingPriceRs": 44033.63
+    }
+  ],
+  "streptokinase": [
+    {
+      "dosageForm": "Injection 750,000 IU Each Pack",
+      "ceilingPriceRs": 1397.88
+    },
+    {
+      "dosageForm": "Injection 15,00,000 IU Each Pack",
+      "ceilingPriceRs": 1987.53
+    }
+  ],
+  "atorvastatin": [
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 6.09
+    },
+    {
+      "dosageForm": "Tablet 20 mg 1 Tablet",
+      "ceilingPriceRs": 14.75
+    },
+    {
+      "dosageForm": "Tablet 40 mg 1 Tablet",
+      "ceilingPriceRs": 21.42
+    }
+  ],
+  "donepezil": [
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 12.48
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 17.82
+    }
+  ],
+  "framycetin": [
+    {
+      "dosageForm": "Cream 0.5% 1 gm",
+      "ceilingPriceRs": 1.19
+    }
+  ],
+  "fusidic acid": [
+    {
+      "dosageForm": "Cream 2% 1 gm",
+      "ceilingPriceRs": 10.14
+    }
+  ],
+  "methylrosaniliniu m": [
+    {
+      "dosageForm": "Paint 1% 1 ml",
+      "ceilingPriceRs": 0.09
+    },
+    {
+      "dosageForm": "Scrub 7.5% 1 ml",
+      "ceilingPriceRs": 1.78
+    },
+    {
+      "dosageForm": "Ointment 10% 1 gm",
+      "ceilingPriceRs": 5.78
+    },
+    {
+      "dosageForm": "Solution 4% 1 ml",
+      "ceilingPriceRs": 1.93
+    },
+    {
+      "dosageForm": "Solution 7.5% 1 ml",
+      "ceilingPriceRs": 0.85
+    },
+    {
+      "dosageForm": "Solution 10% 1 ml",
+      "ceilingPriceRs": 1.03
+    },
+    {
+      "dosageForm": "Solution 5% 1 ml",
+      "ceilingPriceRs": 0.43
+    }
+  ],
+  "silver sulphadiazine": [
+    {
+      "dosageForm": "Cream 1% 1 gm",
+      "ceilingPriceRs": 0.56
+    }
+  ],
+  "betamethasone": [
+    {
+      "dosageForm": "Cream 0.05% 1 gm",
+      "ceilingPriceRs": 0.64
+    },
+    {
+      "dosageForm": "Cream 0.1% 1 gm",
+      "ceilingPriceRs": 0.93
+    },
+    {
+      "dosageForm": "Gel 0.05% 1 gm",
+      "ceilingPriceRs": 0.59
+    },
+    {
+      "dosageForm": "Lotion 0.1% 1 ml",
+      "ceilingPriceRs": 0.91
+    },
+    {
+      "dosageForm": "Lotion 0.5% 1 ml",
+      "ceilingPriceRs": 0.59
+    },
+    {
+      "dosageForm": "Injection 4 mg/ml 1 ml",
+      "ceilingPriceRs": 4.66
+    }
+  ],
+  "calamine": [
+    {
+      "dosageForm": "Lotion (As per IP) 1 ml",
+      "ceilingPriceRs": 0.94
+    }
+  ],
+  "benzoyl peroxide": [
+    {
+      "dosageForm": "Gel 2.5% 1 gm",
+      "ceilingPriceRs": 4.16
+    },
+    {
+      "dosageForm": "Cream 2.5% 1 gm",
+      "ceilingPriceRs": 2.59
+    }
+  ],
+  "salicylic acid": [
+    {
+      "dosageForm": "Ointment 6% 1 gm",
+      "ceilingPriceRs": 1.99
+    }
+  ],
+  "permethrin": [
+    {
+      "dosageForm": "Lotion 1% 1 gm",
+      "ceilingPriceRs": 1.01
+    },
+    {
+      "dosageForm": "Cream 5% 1 gm",
+      "ceilingPriceRs": 1.93
+    },
+    {
+      "dosageForm": "Cream 1% 1 gm",
+      "ceilingPriceRs": 1.78
+    },
+    {
+      "dosageForm": "Gel 5% 1 gm",
+      "ceilingPriceRs": 1.63
+    },
+    {
+      "dosageForm": "Lotion 5% 1 ml",
+      "ceilingPriceRs": 1.09
+    }
+  ],
+  "glycerin": [
+    {
+      "dosageForm": "Oral Liquid 1 ml",
+      "ceilingPriceRs": 0.17
+    }
+  ],
+  "white petrolatum jelly 100 1 gm": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 0.1
+    }
+  ],
+  "lignocaine eye drop 4 1 gm or 1 ml": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 1.2
+    }
+  ],
+  "tropicamide eye drop 1 1 ml": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 11.17
+    }
+  ],
+  "gadobenate": [
+    {
+      "dosageForm": "Injection 529 mg/ml 1 ml",
+      "ceilingPriceRs": 121.01
+    },
+    {
+      "dosageForm": "Injection 300mgiodine/ml 1 ml",
+      "ceilingPriceRs": 18.46
+    }
+  ],
+  "meglumine diatrizoate": [
+    {
+      "dosageForm": "Injection 60% w/v 1 ml",
+      "ceilingPriceRs": 9.17
+    },
+    {
+      "dosageForm": "Injection 76% w/v 1 ml",
+      "ceilingPriceRs": 10.6
+    }
+  ],
+  "haemodialysis fluid as licensed 1 ml": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 0.04
+    }
+  ],
+  "cetrimide": [
+    {
+      "dosageForm": "Solution 20% (Concentrate 1 ml",
+      "ceilingPriceRs": 0.35
+    }
+  ],
+  "chlorhexidine": [
+    {
+      "dosageForm": "Solution 5% (Concentrate for 1 ml",
+      "ceilingPriceRs": 0.17
+    }
+  ],
+  "ethyl alcohol (denatured)": [
+    {
+      "dosageForm": "Solution 70% 1 ml",
+      "ceilingPriceRs": 0.47
+    }
+  ],
+  "hydrogen peroxide": [
+    {
+      "dosageForm": "Solution 6% 1 ml",
+      "ceilingPriceRs": 0.04
+    },
+    {
+      "dosageForm": "Solution 4% 1 ml",
+      "ceilingPriceRs": 1.93
+    },
+    {
+      "dosageForm": "Solution 7.5% 1 ml",
+      "ceilingPriceRs": 0.85
+    },
+    {
+      "dosageForm": "Solution 10% 1 ml",
+      "ceilingPriceRs": 1.03
+    },
+    {
+      "dosageForm": "Solution 5% 1 ml",
+      "ceilingPriceRs": 0.43
+    }
+  ],
+  "glutaraldehyde": [
+    {
+      "dosageForm": "Solution 2% 1 ml",
+      "ceilingPriceRs": 0.07
+    }
+  ],
+  "potassium permanganate crystals for topical solution 1 gm": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 0.49
+    }
+  ],
+  "furosemide": [
+    {
+      "dosageForm": "Tablet 40 mg 1 Tablet",
+      "ceilingPriceRs": 0.83
+    },
+    {
+      "dosageForm": "Oral liquid 10 mg/ml 1 ml",
+      "ceilingPriceRs": 3.07
+    },
+    {
+      "dosageForm": "Injection 10 mg/ ml 1 ml",
+      "ceilingPriceRs": 2.76
+    }
+  ],
+  "mannitol": [
+    {
+      "dosageForm": "Injection 10% 1 ml",
+      "ceilingPriceRs": 0.18
+    },
+    {
+      "dosageForm": "Injection 20% 1 ml",
+      "ceilingPriceRs": 0.33
+    }
+  ],
+  "spironolactone": [
+    {
+      "dosageForm": "Tablet 25 mg 1 Tablet",
+      "ceilingPriceRs": 2.13
+    },
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 4.22
+    }
+  ],
+  "budesonide": [
+    {
+      "dosageForm": "Nasal Spray 50 mcg/dose 1 Dose",
+      "ceilingPriceRs": 1.13
+    },
+    {
+      "dosageForm": "Nasal Spray 100 mcg/dose 1 Dose",
+      "ceilingPriceRs": 1.01
+    },
+    {
+      "dosageForm": "Inhalation (MDI/DPI) 100 Per Metered",
+      "ceilingPriceRs": 1.41
+    },
+    {
+      "dosageForm": "Per Dose",
+      "ceilingPriceRs": 2.22
+    },
+    {
+      "dosageForm": "Inhalation (MDI/DPI) 200 Per metered",
+      "ceilingPriceRs": 1.96
+    },
+    {
+      "dosageForm": "Per Dose",
+      "ceilingPriceRs": 3.21
+    },
+    {
+      "dosageForm": "Respirator solution for use in 1 ml",
+      "ceilingPriceRs": 11.9
+    },
+    {
+      "dosageForm": "Respirator solution for use in 1 ml",
+      "ceilingPriceRs": 14.34
+    }
+  ],
+  "xylometazoline": [
+    {
+      "dosageForm": "Nasal drops 0.05 % 1 ml",
+      "ceilingPriceRs": 4.36
+    },
+    {
+      "dosageForm": "Nasal drops 0.1 % 1 ml",
+      "ceilingPriceRs": 5.78
+    }
+  ],
+  "omeprazole": [
+    {
+      "dosageForm": "Capsule 10 mg 1 Capsule",
+      "ceilingPriceRs": 2.35
+    },
+    {
+      "dosageForm": "Capsule 20 mg 1 Capsule",
+      "ceilingPriceRs": 2.77
+    },
+    {
+      "dosageForm": "Capsule 40 mg 1 Capsule",
+      "ceilingPriceRs": 5.48
+    },
+    {
+      "dosageForm": "Powder for oral Liquid 20 mg 1 gm",
+      "ceilingPriceRs": 1.36
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 4.92
+    },
+    {
+      "dosageForm": "Tablet 20 mg 1 Tablet",
+      "ceilingPriceRs": 5.47
+    },
+    {
+      "dosageForm": "Tablet 40 mg 1 Tablet",
+      "ceilingPriceRs": 9.25
+    }
+  ],
+  "pantoprazole": [
+    {
+      "dosageForm": "Injection 40 mg Each Pack",
+      "ceilingPriceRs": 49.43
+    }
+  ],
+  "ranitidine": [
+    {
+      "dosageForm": "Tablet 150 mg 1 Tablet",
+      "ceilingPriceRs": 1.22
+    },
+    {
+      "dosageForm": "Oral liquid 75 mg/5 ml 1 ml",
+      "ceilingPriceRs": 1.2
+    },
+    {
+      "dosageForm": "Injection 25 mg/ml 1 ml",
+      "ceilingPriceRs": 2.69
+    }
+  ],
+  "sucralfate": [
+    {
+      "dosageForm": "Oral liquid 1 g 1 ml",
+      "ceilingPriceRs": 0.78
+    }
+  ],
+  "domperidone": [
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 2.68
+    },
+    {
+      "dosageForm": "Oral liquid 1 mg/ml 1 ml",
+      "ceilingPriceRs": 1.2
+    },
+    {
+      "dosageForm": "Injection 5 mg/ml (10 ml 1 ml",
+      "ceilingPriceRs": 1.58
+    },
+    {
+      "dosageForm": "Injection 5 mg/ml (2 ml Pack) 1 ml",
+      "ceilingPriceRs": 2.59
+    }
+  ],
+  "5aminosalicylic acid": [
+    {
+      "dosageForm": "Tablet 400 mg 1 Tablet",
+      "ceilingPriceRs": 8.3
+    },
+    {
+      "dosageForm": "Suppository 500 mg 1 Suppository",
+      "ceilingPriceRs": 18.77
+    }
+  ],
+  "dicyclomine": [
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 0.12
+    },
+    {
+      "dosageForm": "Oral Solution 10mg/5ml 1 ml",
+      "ceilingPriceRs": 0.18
+    },
+    {
+      "dosageForm": "Injection 10 mg/ml (10ml & 1 ml",
+      "ceilingPriceRs": 2.28
+    },
+    {
+      "dosageForm": "Injection 10 mg/ml (1ml & 1 ml",
+      "ceilingPriceRs": 3.54
+    }
+  ],
+  "hyoscine butylbromide": [
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 3.3
+    },
+    {
+      "dosageForm": "Injection 20 mg/ml 1 ml",
+      "ceilingPriceRs": 11.59
+    }
+  ],
+  "bisacodyl": [
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 1.12
+    },
+    {
+      "dosageForm": "Suppository 5 mg 1 Suppository",
+      "ceilingPriceRs": 9.37
+    }
+  ],
+  "ispaghula": [
+    {
+      "dosageForm": "Granules/ Husk/ Powder 1 gm",
+      "ceilingPriceRs": 0.85
+    }
+  ],
+  "oral rehydration salts as licensed 1 gm": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 0.99
+    },
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 0.99
+    }
+  ],
+  "ml": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 0.16
+    },
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 0.16
+    }
+  ],
+  "zinc sulphate dispersible": [
+    {
+      "dosageForm": "Tablet 20 mg 1 Tablet",
+      "ceilingPriceRs": 3.49
+    }
+  ],
+  "somatostatin": [
+    {
+      "dosageForm": "Powder for Injection 3 mg Each pack",
+      "ceilingPriceRs": 1759.69
+    }
+  ],
+  "human chorionic": [
+    {
+      "dosageForm": "Injection 1000 IU Each Pack",
+      "ceilingPriceRs": 235.98
+    },
+    {
+      "dosageForm": "Injection 5000 IU Each Pack",
+      "ceilingPriceRs": 463.41
+    }
+  ],
+  "methylprednisolone": [
+    {
+      "dosageForm": "Tablet 8 mg 1 Tablet",
+      "ceilingPriceRs": 5.66
+    },
+    {
+      "dosageForm": "Tablet 16 mg 1 Tablet",
+      "ceilingPriceRs": 9.9
+    },
+    {
+      "dosageForm": "Injection 40 mg/ml 1 ml",
+      "ceilingPriceRs": 59.92
+    }
+  ],
+  "ethinylestradiol(a) +": [
+    {
+      "dosageForm": "Tablet 0.03 mg (A) + 0.15 mg 1 Tablet",
+      "ceilingPriceRs": 3.83
+    }
+  ],
+  "hormone releasing iud contains 52 mg of 1 iud": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 4295.01
+    }
+  ],
+  "iud containing copper as licensed 1 iud": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 319.22
+    }
+  ],
+  "ethinylestradiol": [
+    {
+      "dosageForm": "Tablet 0.01 mg 1 Tablet",
+      "ceilingPriceRs": 2.6
+    },
+    {
+      "dosageForm": "Tablet 0.05 mg 1 Tablet",
+      "ceilingPriceRs": 4.16
+    }
+  ],
+  "levonorgestrel": [
+    {
+      "dosageForm": "Tablet 0.75 mg 1 Tablet",
+      "ceilingPriceRs": 25.55
+    }
+  ],
+  "glimepiride": [
+    {
+      "dosageForm": "Tablet 1 mg 1 Tablet",
+      "ceilingPriceRs": 3.99
+    },
+    {
+      "dosageForm": "Tablet 2 mg 1 Tablet",
+      "ceilingPriceRs": 6.34
+    }
+  ],
+  "insulin (soluble)": [
+    {
+      "dosageForm": "Injection 40 IU/ml 1 ml",
+      "ceilingPriceRs": 16.71
+    }
+  ],
+  "intermediate acting (nph)": [
+    {
+      "dosageForm": "Injection 40 IU/ml 1 ml",
+      "ceilingPriceRs": 16.71
+    }
+  ],
+  "metformin": [
+    {
+      "dosageForm": "Tablet 500 mg(Controlled 1 Tablet",
+      "ceilingPriceRs": 2.13
+    },
+    {
+      "dosageForm": "Tablet 500 mg(Immediate 1 Tablet",
+      "ceilingPriceRs": 1.67
+    },
+    {
+      "dosageForm": "Tablet 750 mg(Controlled 1 Tablet",
+      "ceilingPriceRs": 2.66
+    },
+    {
+      "dosageForm": "Tablet 750 mg(Immediate 1 Tablet",
+      "ceilingPriceRs": 3.38
+    },
+    {
+      "dosageForm": "Tablet 1000 mg(Immediate 1 Tablet",
+      "ceilingPriceRs": 4.0
+    },
+    {
+      "dosageForm": "Tablet 1000 mg(Controlled 1 Tablet",
+      "ceilingPriceRs": 4.05
+    }
+  ],
+  "premix insulin 3070": [
+    {
+      "dosageForm": "Injection 40 IU/ml 1 ml",
+      "ceilingPriceRs": 16.71
+    }
+  ],
+  "glucose": [
+    {
+      "dosageForm": "Injection 25 % 1 ml",
+      "ceilingPriceRs": 0.19
+    },
+    {
+      "dosageForm": "Injection 5% 1000ml Glass",
+      "ceilingPriceRs": 71.31
+    },
+    {
+      "dosageForm": "Injection 5% 1000ml Non-",
+      "ceilingPriceRs": 57.57
+    },
+    {
+      "dosageForm": "Injection 5% 100ml Glass",
+      "ceilingPriceRs": 20.02
+    },
+    {
+      "dosageForm": "Injection 5% 100ml Non-",
+      "ceilingPriceRs": 18.12
+    },
+    {
+      "dosageForm": "Injection 5% 250ml Glass",
+      "ceilingPriceRs": 27.66
+    },
+    {
+      "dosageForm": "Injection 5% 250ml Non-",
+      "ceilingPriceRs": 24.99
+    },
+    {
+      "dosageForm": "Injection 5% 500ml Glass",
+      "ceilingPriceRs": 39.26
+    },
+    {
+      "dosageForm": "Injection 5% 500ml Non-",
+      "ceilingPriceRs": 33.87
+    },
+    {
+      "dosageForm": "Injection 5% 1000ml Non-",
+      "ceilingPriceRs": 84.82
+    },
+    {
+      "dosageForm": "Injection 5% 500ml Non-",
+      "ceilingPriceRs": 73.38
+    },
+    {
+      "dosageForm": "Injection 10% Each Pack (1000",
+      "ceilingPriceRs": 28.68
+    },
+    {
+      "dosageForm": "Injection 10% Each Pack (500",
+      "ceilingPriceRs": 31.19
+    },
+    {
+      "dosageForm": "Injection 25% 1 ml",
+      "ceilingPriceRs": 0.19
+    },
+    {
+      "dosageForm": "Injection 50% 1 ml",
+      "ceilingPriceRs": 0.54
+    }
+  ],
+  "clomiphene": [
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 9.24
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 13.57
+    },
+    {
+      "dosageForm": "Capsule 100 mg 1 Capsule",
+      "ceilingPriceRs": 61.81
+    },
+    {
+      "dosageForm": "Capsule 50 mg 1 Capsule",
+      "ceilingPriceRs": 33.99
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 5.98
+    }
+  ],
+  "norethisterone": [
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 5.67
+    }
+  ],
+  "carbimazole": [
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 2.12
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 4.11
+    },
+    {
+      "dosageForm": "Tablet 12.5 mcg 1 Tablet",
+      "ceilingPriceRs": 1.5
+    },
+    {
+      "dosageForm": "Tablet 25 mcg 1 Tablet",
+      "ceilingPriceRs": 1.45
+    },
+    {
+      "dosageForm": "Tablet 37.50 mcg 1 Tablet",
+      "ceilingPriceRs": 1.31
+    },
+    {
+      "dosageForm": "Tablet 50 mcg 1 Tablet",
+      "ceilingPriceRs": 1.1
+    },
+    {
+      "dosageForm": "Tablet 62.5mcg 1 Tablet",
+      "ceilingPriceRs": 1.56
+    },
+    {
+      "dosageForm": "Tablet 75 mcg 1 Tablet",
+      "ceilingPriceRs": 1.44
+    },
+    {
+      "dosageForm": "Tablet 88 mcg 1 Tablet",
+      "ceilingPriceRs": 1.71
+    },
+    {
+      "dosageForm": "Tablet 100 mcg 1 Tablet",
+      "ceilingPriceRs": 1.33
+    },
+    {
+      "dosageForm": "Tablet 112mcg 1 Tablet",
+      "ceilingPriceRs": 1.6
+    },
+    {
+      "dosageForm": "Tablet 125 mcg 1 Tablet",
+      "ceilingPriceRs": 1.71
+    },
+    {
+      "dosageForm": "Tablet 150 mcg 1 Tablet",
+      "ceilingPriceRs": 1.72
+    }
+  ],
+  "antirabies": [
+    {
+      "dosageForm": "Injection 150 IU/ml 1 ml",
+      "ceilingPriceRs": 3080.46
+    },
+    {
+      "dosageForm": "Injection 300 IU/ml 1 ml",
+      "ceilingPriceRs": 108.6
+    }
+  ],
+  "antitetanus 250iu each pack": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 1233.92
+    }
+  ],
+  "antid immunoglobulin": [
+    {
+      "dosageForm": "Injection 300mcg Each Pack",
+      "ceilingPriceRs": 2370.03
+    },
+    {
+      "dosageForm": "Injection 150mcg Each Vial",
+      "ceilingPriceRs": 1847.36
+    }
+  ],
+  "diphtheria antitoxin 10000 iu each pack": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 1455.21
+    }
+  ],
+  "hepatitis b each pack": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 6116.13
+    }
+  ],
+  "human normal": [
+    {
+      "dosageForm": "Solution for infusion 5% 1 ml",
+      "ceilingPriceRs": 171.3
+    },
+    {
+      "dosageForm": "Solution for infusion 10% 1 ml",
+      "ceilingPriceRs": 231.92
+    },
+    {
+      "dosageForm": "Solution for infusion 16.5% 1 ml",
+      "ceilingPriceRs": 441.03
+    },
+    {
+      "dosageForm": "a) Soluble/ liquid Injection Each Pack (10",
+      "ceilingPriceRs": 480.46
+    },
+    {
+      "dosageForm": "b) Lyophilized polyvalent Powder for Injection 10 ml Pack",
+      "ceilingPriceRs": 618.71
+    }
+  ],
+  "bcg vaccine each dose": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 9.92
+    }
+  ],
+  "dpt + hib + hep b vaccine per 01 ml": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 89.18
+    }
+  ],
+  "dpt vaccine per 05 ml": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 15.73
+    }
+  ],
+  "hepatitis b vaccine 1 ml": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 86.95
+    }
+  ],
+  "japanese encephalitis 4mcg to 6mcg each pack": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 774.52
+    },
+    {
+      "dosageForm": "up to 3mcg Each Pack",
+      "ceilingPriceRs": 590.07
+    }
+  ],
+  "measles vaccine vaccine each pack": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 56.61
+    }
+  ],
+  "oral poliomyelitis vaccine 1 ml": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 113.86
+    }
+  ],
+  "tetanus toxoid": [
+    {
+      "dosageForm": "Injection Each Pack",
+      "ceilingPriceRs": 12.04
+    },
+    {
+      "dosageForm": "Injection Each Pack (5 ml)",
+      "ceilingPriceRs": 26.03
+    }
+  ],
+  "rabies vaccine each pack": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 379.43
+    }
+  ],
+  "atracurium": [
+    {
+      "dosageForm": "Injection 10 mg/ml Each Pack",
+      "ceilingPriceRs": 58.21
+    }
+  ],
+  "baclofen": [
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 6.15
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 11.94
+    },
+    {
+      "dosageForm": "Tablet 20 mg 1 Tablet",
+      "ceilingPriceRs": 16.43
+    }
+  ],
+  "succinylcholine": [
+    {
+      "dosageForm": "Injection 50 mg/ml 1 ml",
+      "ceilingPriceRs": 5.37
+    }
+  ],
+  "vecuronium": [
+    {
+      "dosageForm": "Powder for Injection 4 mg Each Pack",
+      "ceilingPriceRs": 101.32
+    },
+    {
+      "dosageForm": "Powder for Injection 10 mg Each Pack",
+      "ceilingPriceRs": 209.93
+    }
+  ],
+  "alprostadil": [
+    {
+      "dosageForm": "Injection 0.5 mg/ml 1 ml",
+      "ceilingPriceRs": 6288.11
+    }
+  ],
+  "caffeine": [
+    {
+      "dosageForm": "Oral liquid 20 mg/ml 1 ml",
+      "ceilingPriceRs": 236.71
+    },
+    {
+      "dosageForm": "Injection 20 mg/ml 1 ml",
+      "ceilingPriceRs": 278.7
+    }
+  ],
+  "surfactant": [
+    {
+      "dosageForm": "Suspension for intratracheal Per mg of",
+      "ceilingPriceRs": 74.27
+    }
+  ],
+  "natamycin": [
+    {
+      "dosageForm": "Drops 5% 1 ml",
+      "ceilingPriceRs": 25.32
+    }
+  ],
+  "proparacaine": [
+    {
+      "dosageForm": "Drops 0.5% 1 ml",
+      "ceilingPriceRs": 11.07
+    }
+  ],
+  "acetazolamide": [
+    {
+      "dosageForm": "Tablet 250 mg 1 Tablet",
+      "ceilingPriceRs": 4.07
+    },
+    {
+      "dosageForm": "Capsule 250 mg 1 Capsule",
+      "ceilingPriceRs": 5.02
+    }
+  ],
+  "pilocarpine": [
+    {
+      "dosageForm": "Drops 2% 1 ml",
+      "ceilingPriceRs": 11.22
+    },
+    {
+      "dosageForm": "Drops 4% 1 ml",
+      "ceilingPriceRs": 12.97
+    }
+  ],
+  "timolol": [
+    {
+      "dosageForm": "Drops 0.25% 1 ml",
+      "ceilingPriceRs": 5.74
+    },
+    {
+      "dosageForm": "Drops 0.5% 1 ml",
+      "ceilingPriceRs": 13.24
+    }
+  ],
+  "homatropine": [
+    {
+      "dosageForm": "Drops 2% 1 ml",
+      "ceilingPriceRs": 6.89
+    }
+  ],
+  "phenylephrine": [
+    {
+      "dosageForm": "Drops 5% 1 ml",
+      "ceilingPriceRs": 4.14
+    },
+    {
+      "dosageForm": "Drops 10 % 1 ml",
+      "ceilingPriceRs": 8.97
+    }
+  ],
+  "tropicamide": [
+    {
+      "dosageForm": "Drops 1% 1 ml",
+      "ceilingPriceRs": 11.17
+    }
+  ],
+  "hydroxypropyl": [
+    {
+      "dosageForm": "Injection 2% 1 ml",
+      "ceilingPriceRs": 41.64
+    }
+  ],
+  "carboxymethylcell ulose": [
+    {
+      "dosageForm": "Drops 0.5% 1 ml",
+      "ceilingPriceRs": 14.19
+    },
+    {
+      "dosageForm": "Drops 1 % 1 ml",
+      "ceilingPriceRs": 19.66
+    }
+  ],
+  "dinoprostone": [
+    {
+      "dosageForm": "Tablet 0.5 mg 1 Tablet",
+      "ceilingPriceRs": 55.57
+    },
+    {
+      "dosageForm": "Gel 0.5 mg 1 gm",
+      "ceilingPriceRs": 90.01
+    }
+  ],
+  "methylergometrine": [
+    {
+      "dosageForm": "Tablet 0.125 mg 1 Tablet",
+      "ceilingPriceRs": 8.79
+    },
+    {
+      "dosageForm": "Injection 0.2 mg/ml 1 ml",
+      "ceilingPriceRs": 15.85
+    }
+  ],
+  "mifepristone": [
+    {
+      "dosageForm": "Tablet 200 mg 1 Tablet",
+      "ceilingPriceRs": 357.21
+    }
+  ],
+  "misoprostol": [
+    {
+      "dosageForm": "Tablet 100 mcg 1 Tablet",
+      "ceilingPriceRs": 9.67
+    },
+    {
+      "dosageForm": "Tablet 200 mcg 1 Tablet",
+      "ceilingPriceRs": 18.54
+    }
+  ],
+  "oxytocin": [
+    {
+      "dosageForm": "Injection 5 IU/ml 1 ml",
+      "ceilingPriceRs": 19.59
+    },
+    {
+      "dosageForm": "Injection 10 IU/ml 1 ml",
+      "ceilingPriceRs": 43.74
+    }
+  ],
+  "nifedipine": [
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 1.37
+    },
+    {
+      "dosageForm": "Capsule 10 mg 1 Capsule",
+      "ceilingPriceRs": 0.95
+    }
+  ],
+  "clozapine": [
+    {
+      "dosageForm": "Tablet 25 mg 1 Tablet",
+      "ceilingPriceRs": 2.79
+    },
+    {
+      "dosageForm": "Tablet 50 mg 1 Tablet",
+      "ceilingPriceRs": 5.34
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 8.6
+    }
+  ],
+  "fluphenazine depot": [
+    {
+      "dosageForm": "Injection 25 mg/ml 1 ml",
+      "ceilingPriceRs": 55.55
+    }
+  ],
+  "risperidone": [
+    {
+      "dosageForm": "Tablet 1 mg 1 Tablet",
+      "ceilingPriceRs": 3.42
+    },
+    {
+      "dosageForm": "Tablet 2 mg 1 Tablet",
+      "ceilingPriceRs": 5.47
+    },
+    {
+      "dosageForm": "Tablet 4 mg 1 Tablet",
+      "ceilingPriceRs": 11.1
+    },
+    {
+      "dosageForm": "Oral liquid 1 mg/ml 1 ml",
+      "ceilingPriceRs": 2.15
+    }
+  ],
+  "escitalopram": [
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 5.06
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 8.99
+    },
+    {
+      "dosageForm": "Tablet 20 mg 1 Tablet",
+      "ceilingPriceRs": 14.21
+    }
+  ],
+  "lithium": [
+    {
+      "dosageForm": "Tablet 300 mg 1 Tablet",
+      "ceilingPriceRs": 1.63
+    }
+  ],
+  "clonazepam": [
+    {
+      "dosageForm": "Tablet 0.25 mg 1 Tablet",
+      "ceilingPriceRs": 2.03
+    },
+    {
+      "dosageForm": "Tablet 0.5 mg 1 Tablet",
+      "ceilingPriceRs": 3.46
+    },
+    {
+      "dosageForm": "Tablet 1 mg 1 Tablet",
+      "ceilingPriceRs": 4.7
+    }
+  ],
+  "zolpidem": [
+    {
+      "dosageForm": "Tablet 5 mg 1 Tablet",
+      "ceilingPriceRs": 5.98
+    },
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 9.38
+    },
+    {
+      "dosageForm": "Capsule 5 mg 1 Capsule",
+      "ceilingPriceRs": 8.16
+    }
+  ],
+  "clomipramine": [
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 2.79
+    },
+    {
+      "dosageForm": "Tablet 25 mg 1 Tablet",
+      "ceilingPriceRs": 6.16
+    },
+    {
+      "dosageForm": "Tablet 75 mg 1 Tablet",
+      "ceilingPriceRs": 15.93
+    }
+  ],
+  "budesonide (a)+": [
+    {
+      "dosageForm": "Inhalation (MDI/DPI) 100 mcg Per Metered",
+      "ceilingPriceRs": 2.09
+    },
+    {
+      "dosageForm": "Per Dose",
+      "ceilingPriceRs": 4.21
+    },
+    {
+      "dosageForm": "Inhalation (MDI/DPI) 200 mcg Per Metered",
+      "ceilingPriceRs": 2.97
+    },
+    {
+      "dosageForm": "Per Dose",
+      "ceilingPriceRs": 5.59
+    },
+    {
+      "dosageForm": "Inhalation (MDI/DPI) 400 mcg Per Metered",
+      "ceilingPriceRs": 3.39
+    },
+    {
+      "dosageForm": "Per Dose",
+      "ceilingPriceRs": 7.14
+    }
+  ],
+  "ipratropium": [
+    {
+      "dosageForm": "Inhalation (MDI/DPI) 20 1 Dose",
+      "ceilingPriceRs": 0.68
+    },
+    {
+      "dosageForm": "Respirator solution for use in 1 ml",
+      "ceilingPriceRs": 2.81
+    }
+  ],
+  "salbutamol": [
+    {
+      "dosageForm": "Tablet 2 mg 1 Tablet",
+      "ceilingPriceRs": 0.18
+    },
+    {
+      "dosageForm": "Tablet 4 mg 1 Tablet",
+      "ceilingPriceRs": 0.2
+    },
+    {
+      "dosageForm": "Oral liquid 2 mg/5 ml 1 ml",
+      "ceilingPriceRs": 0.17
+    },
+    {
+      "dosageForm": "Inhalation (MDI/DPI) 100 1 Dose",
+      "ceilingPriceRs": 0.44
+    },
+    {
+      "dosageForm": "Respirator solution for use in 1 ml",
+      "ceilingPriceRs": 0.78
+    },
+    {
+      "dosageForm": "Capsule 4 mg 1 Capsule",
+      "ceilingPriceRs": 0.66
+    }
+  ],
+  "tiotropium": [
+    {
+      "dosageForm": "Inhalation (MDI) 9 mcg/dose Per Metered",
+      "ceilingPriceRs": 2.67
+    },
+    {
+      "dosageForm": "Inhalation (DPI) 18 mcg/dose Per Dose",
+      "ceilingPriceRs": 10.31
+    }
+  ],
+  "glucose (a) + sodium": [
+    {
+      "dosageForm": "Injection 5% (A) + 0.9% (B) 1000ml Glass",
+      "ceilingPriceRs": 71.78
+    },
+    {
+      "dosageForm": "Injection 5% (A) + 0.9% (B) 1000ml Non-",
+      "ceilingPriceRs": 58.0
+    },
+    {
+      "dosageForm": "Injection 5% (A) + 0.9% (B) 100ml Glass",
+      "ceilingPriceRs": 20.07
+    },
+    {
+      "dosageForm": "Injection 5% (A) + 0.9% (B) 100ml Non-",
+      "ceilingPriceRs": 18.14
+    },
+    {
+      "dosageForm": "Injection 5% (A) + 0.9% (B) 250ml Glass",
+      "ceilingPriceRs": 27.77
+    },
+    {
+      "dosageForm": "Injection 5% (A) + 0.9% (B) 250ml Non-",
+      "ceilingPriceRs": 25.08
+    },
+    {
+      "dosageForm": "Injection 5% (A) + 0.9% (B) 500ml Glass",
+      "ceilingPriceRs": 39.45
+    },
+    {
+      "dosageForm": "Injection 5% (A) + 0.9% (B) 500ml Non-",
+      "ceilingPriceRs": 34.08
+    }
+  ],
+  "potassium chloride": [
+    {
+      "dosageForm": "Injection 150 mg/ml 1 ml",
+      "ceilingPriceRs": 2.69
+    },
+    {
+      "dosageForm": "Oral liquid 500 mg/5 ml 1 ml",
+      "ceilingPriceRs": 0.32
+    },
+    {
+      "dosageForm": "Injection 1000ml Each Pack",
+      "ceilingPriceRs": 88.57
+    },
+    {
+      "dosageForm": "Injection 100ml Each Pack",
+      "ceilingPriceRs": 23.19
+    },
+    {
+      "dosageForm": "Injection 250ml Each Pack",
+      "ceilingPriceRs": 39.54
+    },
+    {
+      "dosageForm": "Injection 500ml Each Pack",
+      "ceilingPriceRs": 50.39
+    },
+    {
+      "dosageForm": "Injection 7.5% 1 ml",
+      "ceilingPriceRs": 1.56
+    },
+    {
+      "dosageForm": "Injection 8.4% 1 ml",
+      "ceilingPriceRs": 1.43
+    }
+  ],
+  "sodium chloride": [
+    {
+      "dosageForm": "Injection 0.9% 1000ml Glass",
+      "ceilingPriceRs": 65.89
+    },
+    {
+      "dosageForm": "Injection 0.9% 1000ml Non-",
+      "ceilingPriceRs": 51.97
+    },
+    {
+      "dosageForm": "Injection 0.9% 100ml Glass",
+      "ceilingPriceRs": 19.48
+    },
+    {
+      "dosageForm": "Injection 0.9% 100ml Non-",
+      "ceilingPriceRs": 17.55
+    },
+    {
+      "dosageForm": "Injection 0.9% 250ml Glass",
+      "ceilingPriceRs": 26.28
+    },
+    {
+      "dosageForm": "Injection 0.9% 250ml Non-",
+      "ceilingPriceRs": 23.59
+    },
+    {
+      "dosageForm": "Injection 0.9% 500ml Glass",
+      "ceilingPriceRs": 36.54
+    },
+    {
+      "dosageForm": "Injection 0.9% 500ml Non-",
+      "ceilingPriceRs": 31.1
+    }
+  ],
+  "water for": [
+    {
+      "dosageForm": "Injection Injection Each Pack (10",
+      "ceilingPriceRs": 2.58
+    },
+    {
+      "dosageForm": "Injection Each Pack (5 ml)",
+      "ceilingPriceRs": 2.49
+    },
+    {
+      "dosageForm": "Injection Per 500 ml Pack",
+      "ceilingPriceRs": 51.19
+    },
+    {
+      "dosageForm": "Injection Per 1000 ml",
+      "ceilingPriceRs": 89.84
+    }
+  ],
+  "ascorbic acid (vitamin c)": [
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 0.21
+    },
+    {
+      "dosageForm": "Tablet 500 mg 1 Tablet",
+      "ceilingPriceRs": 1.53
+    },
+    {
+      "dosageForm": "Tablet 500 mg 1 Tablet",
+      "ceilingPriceRs": 1.92
+    }
+  ],
+  "cholecalciferol": [
+    {
+      "dosageForm": "Tablet 1000 IU, 1 Tablet",
+      "ceilingPriceRs": 4.16
+    },
+    {
+      "dosageForm": "Tablet 60000 IU 1 Tablet",
+      "ceilingPriceRs": 26.93
+    },
+    {
+      "dosageForm": "Capsule 1000 IU 1 Capsule",
+      "ceilingPriceRs": 5.31
+    },
+    {
+      "dosageForm": "Capsule 60000 IU 1 Capsule",
+      "ceilingPriceRs": 32.79
+    },
+    {
+      "dosageForm": "Oral liquid 400 IU/ml 1 ml",
+      "ceilingPriceRs": 2.6
+    }
+  ],
+  "pyridoxine": [
+    {
+      "dosageForm": "Tablet 10 mg 1 Tablet",
+      "ceilingPriceRs": 0.12
+    },
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 6.2
+    }
+  ],
+  "thiamine": [
+    {
+      "dosageForm": "Tablet 100 mg 1 Tablet",
+      "ceilingPriceRs": 4.16
+    },
+    {
+      "dosageForm": "Injection 100 mg/ml 1 ml",
+      "ceilingPriceRs": 27.54
+    },
+    {
+      "dosageForm": "Capsule 50000 IU 1 Capsule",
+      "ceilingPriceRs": 0.61
+    },
+    {
+      "dosageForm": "Injection 50000 IU/ml 1 ml",
+      "ceilingPriceRs": 2.13
+    },
+    {
+      "dosageForm": "Tablet 50000 IU 1 Tablet",
+      "ceilingPriceRs": 0.78
+    }
+  ],
+  "bare metal stents (bms) 1": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 9373.03
+    }
+  ],
+  "drug eluting stents (des) 1": [
+    {
+      "dosageForm": "",
+      "ceilingPriceRs": 34128.13
+    }
+  ]
+}
