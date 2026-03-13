@@ -1469,6 +1469,10 @@
       </div>
     </div>
 
+	<div class="disclaimer" style="margin-bottom:16px">
+      <strong>Disclaimer:</strong> ${esc(d.disclaimer || 'Information is for educational purposes only. Always consult a licensed healthcare professional before making medical decisions.')}
+    </div>
+
     <div class="drug-layout">
       <div class="drug-main">
         <div class="tabs-wrap">
@@ -1563,9 +1567,6 @@
                 oninput="this.style.height='auto';this.style.height=Math.min(this.scrollHeight,120)+'px'"></textarea>
               <button class="chat-send" id="chatSendBtn" onclick="sendChat()">→</button>
             </div>
-          </div>
-          <div class="disclaimer">
-            <strong>Disclaimer:</strong> ${esc(d.disclaimer || 'Information is for educational purposes only. Always consult a licensed healthcare professional before making medical decisions.')}
           </div>
         </div>
       </div>
