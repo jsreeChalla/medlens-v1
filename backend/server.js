@@ -4,6 +4,7 @@ const express = require("express");
 const cors = require("cors");
 const rateLimit = require("express-rate-limit");
 const Groq = require("groq-sdk");
+const indianBrands = require("./indian_brands");
 const nppaPrices = require("./nppa_prices.json");
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -123,36 +124,49 @@ app.get("/api/health", (req, res) => {
 
 // ── Consumer ──────────────────────────────────────────────────────────────────
 async function getDrugName(name) {
-try { 
-  const rxRes = await fetch(
-  `https://rxnav.nlm.nih.gov/REST/rxcui.json?name=${encodeURIComponent(name.trim())}&search=1`
-);
-const rxData = await rxRes.json();
-const rxcui = rxData.idGroup?.rxnormId?.[0];
+  try {
+    
+    const normalised = name.toLowerCase().trim();
+    const mapped = indianBrands[normalised];
+    console.log(`[DRUG NAME] "${name}" → "${mapped || 'unknown'}"`);
+    // Brand found — return directly, skip RxNorm
+    if (mapped) return mapped;
 
-if (!rxcui) {
-  return null
-}
+    // Unknown brand — try RxNorm
+    const rxRes = await fetch(
+      `https://rxnav.nlm.nih.gov/REST/rxcui.json?name=${encodeURIComponent(name.trim())}&search=1`
+    );
+    const rxData = await rxRes.json();
+    const rxcui = rxData.idGroup?.rxnormId?.[0];
+    if (!rxcui) return null;
 
-// Get canonical name from RxNorm
-const nameRes = await fetch(`https://rxnav.nlm.nih.gov/REST/rxcui/${rxcui}/property.json?propName=RxNorm%20Name`);
-const nameData = await nameRes.json();
-const canonicalName = nameData.propConceptGroup?.propConcept?.[0]?.propValue || name.trim();
-return canonicalName;
-}catch (err) {
-  console.error(`${err.message}`);
-  return null;
-}
+    const nameRes = await fetch(`https://rxnav.nlm.nih.gov/REST/rxcui/${rxcui}/property.json?propName=RxNorm%20Name`);
+    const nameData = await nameRes.json();
+    return nameData.propConceptGroup?.propConcept?.[0]?.propValue || name.trim();
+
+  } catch (err) {
+    console.error(err.message);
+    return null;
+  }
 }
 
 function getNppaPrices(drugName) {
   const key = drugName.toLowerCase().trim();
-  if (nppaPrices[key]) return nppaPrices[key];
-  // Partial match — handles cases like "Metformin Hydrochloride" → "metformin"
-  const partialKey = Object.keys(nppaPrices).find(k => 
-    key.includes(k) || k.includes(key.split(" ")[0])
-  );
-  return partialKey ? nppaPrices[partialKey] : null;
+  let data = nppaPrices[key];
+  if (!data) {
+    const partialKey = Object.keys(nppaPrices).find(k => 
+      key.includes(k) || k.includes(key.split(" ")[0])
+    );
+    data = partialKey ? nppaPrices[partialKey] : null;
+  }
+  if (!data) return null;
+  // Deduplicate by dosageForm
+  const seen = new Set();
+  return data.filter(p => {
+    if (seen.has(p.dosageForm)) return false;
+    seen.add(p.dosageForm);
+    return true;
+  });
 }
 
 app.post("/api/consumer/drug", async (req, res) => {
