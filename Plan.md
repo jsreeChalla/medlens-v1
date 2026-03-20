@@ -125,14 +125,14 @@ A patient on five medications can't check each pair individually.
 - Output: interaction matrix, severity-highlighted
 - Implementation: either per-pair LLM calls or a single prompt with all drugs listed
 
-### Hindi language support
+### Indian language support
 
 Most impactful accessibility change for Indian users. Hardest to do well.
 
-- Hindi drug summaries require culturally appropriate health communication, not just translation
+- Drug summaries in Indian languages require culturally appropriate health communication, not just translation
 - Option A: post-process English output through a translation model
-- Option B: extend the prompt to produce both English and Hindi simultaneously (lower latency, likely higher quality)
-- Evaluate with native Hindi speakers before shipping
+- Option B: extend the prompt to produce English and other Indian language simultaneously (lower latency, likely higher quality)
+- Evaluate with native speakers before shipping
 
 ### Prescription photo OCR
 
