@@ -6,6 +6,8 @@ const rateLimit = require("express-rate-limit");
 const Groq = require("groq-sdk");
 const indianBrands = require("./indian_brands");
 const nppaPrices = require("./nppa_prices.json");
+const researchRouter = require("./research_routes");
+
 const app = express();
 const PORT = process.env.PORT || 3001;
 const GROQ_API_KEY = process.env.GROQ_API_KEY || "";
@@ -19,9 +21,12 @@ if (!GROQ_API_KEY) {
 const groq = new Groq({ apiKey: GROQ_API_KEY });
 app.use(cors({ origin: "*" }));
 app.use(express.json());
+
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/index.html"));
 });
+
+app.use("/api/research", researchRouter);
 
 // Also, tell Express to serve CSS/JS/Images from the frontend folder
 app.use(express.static(path.join(__dirname, "../frontend")));
