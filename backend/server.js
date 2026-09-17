@@ -11,7 +11,7 @@ const researchRouter = require("./research_routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
 const GROQ_API_KEY = process.env.GROQ_API_KEY || "";
-const GROQ_MODEL = process.env.GROQ_MODEL || "llama-3.1-8b-instant";
+const GROQ_MODEL = process.env.GROQ_MODEL || "openai/gpt-oss-20b";
 
 if (!GROQ_API_KEY) {
   console.error("GROQ_API_KEY missing in .env");
@@ -195,7 +195,8 @@ app.post("/api/consumer/drug", async (req, res) => {
       model: GROQ_MODEL,
       messages: [{ role: "user", content: prompt }],
       temperature: 0.1,
-      max_tokens: 1600,
+      max_tokens: 5000,
+      reasoning_effort: "medium",
       response_format: { type: "json_object" },
     });
     const elapsed = ((Date.now() - start) / 1000).toFixed(1);
@@ -256,7 +257,8 @@ app.post("/api/chat", async (req, res) => {
       model: GROQ_MODEL,
       messages,
       temperature: 0.3,
-      max_tokens: 1024,
+      max_tokens: 2200,
+      reasoning_effort: "medium",
       stream: true,
     });
     for await (const chunk of stream) {

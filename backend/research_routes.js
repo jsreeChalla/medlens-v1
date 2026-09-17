@@ -21,7 +21,7 @@ const rag            = require("./research_rag");
 
 const router = express.Router();
 const groq   = new Groq({ apiKey: process.env.GROQ_API_KEY });
-const MODEL  = process.env.GROQ_MODEL || "llama-3.1-8b-instant";
+const MODEL  = process.env.GROQ_MODEL || "openai/gpt-oss-20b";
 
 async function pdfParse(buffer) {
   const parser = new PDFParse({ data: buffer });
@@ -191,7 +191,8 @@ async function runAgenticLoop(messages, onEvent, maxIter = 5) {
       // OPTIMISATION: Intermediate reasoning steps don't need 2000 tokens.
       // 800 is ample for a tool-call decision + brief reasoning.
       // The final answer step below uses 1200.
-      max_tokens:  800,
+      max_tokens:  1200,
+      reasoning_effort: "medium",
     });
 
     const choice = response.choices[0];
@@ -230,7 +231,8 @@ async function runAgenticLoop(messages, onEvent, maxIter = 5) {
       { role: "user", content: "Please now provide your final synthesised answer based on the retrieved passages." },
     ],
     temperature: 0.2,
-    max_tokens:  1200,
+    max_tokens:  1800,
+    reasoning_effort: "medium",
   });
   return fallback.choices[0]?.message?.content || "Unable to generate a response.";
 }
